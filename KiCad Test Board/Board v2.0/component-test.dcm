@@ -1,0 +1,18 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADG706BRUZ-REEL7
+D ADG706BRUZ-REEL7, Multiplexer Single 16 x 1, 5 V, 28-Pin, TSSOP, 1
+F https://componentsearchengine.com/Datasheets/1/ADG706BRUZ-REEL7.pdf
+$ENDCMP
+#
+$CMP ADG731BSUZ
+D ADG731BSUZ, Multiplexer Single 32:1, 3, 5V, 48-Pin, TQFP
+F https://componentsearchengine.com/Datasheets/1/ADG731BSUZ.pdf
+$ENDCMP
+#
+$CMP EEH-ZA1E470V
+D Aluminum Organic Polymer Capacitors 25VDC 47uF 20% Anti-Vibe AEC-Q200
+F https://ms.componentsearchengine.com/Datasheets/34/EEH-ZA1E470V.pdf
+$ENDCMP
+#
+#End Doc Library

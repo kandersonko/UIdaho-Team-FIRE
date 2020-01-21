@@ -1,0 +1,8 @@
+(fp_lib_table
+  (lib (name digikey-footprints)(type KiCad)(uri "/Users/CollinHeist/Documents/Academia/Senior Design/KiCad Test Board/digikey-kicad-library/digikey-footprints.pretty")(options "")(descr ""))
+  (lib (name Symbol)(type KiCad)(uri ${KIPRJMOD}/Symbol)(options "")(descr ""))
+  (lib (name ADG731BSUZ)(type KiCad)(uri ${KIPRJMOD}/Symbol/ADG731BSUZ)(options "")(descr ""))
+  (lib (name EEH-ZA1E470V)(type Legacy)(uri ${KIPRJMOD}/Symbol/EEH-ZA1E470V/EEH-ZA1E470V.mod)(options "")(descr ""))
+  (lib (name SCCS30B106PRBLE)(type Legacy)(uri ${KIPRJMOD}/Symbol/SCCS30B106PRBLE/SCCS30B106PRBLE.mod)(options "")(descr ""))
+  (lib (name ADG732BSUZ)(type Legacy)(uri ${KIPRJMOD}/Symbol/ADG732BSUZ/ADG732BSUZ.mod)(options "")(descr ""))
+)

@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP ADG706BRUZ-REEL7
+D ADG706BRUZ-REEL7, Multiplexer Single 16 x 1, 5 V, 28-Pin, TSSOP, 1
+K
+F https://componentsearchengine.com/Datasheets/1/ADG706BRUZ-REEL7.pdf
+$ENDCMP
+#
+#End Doc Library
