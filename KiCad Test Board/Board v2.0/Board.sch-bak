@@ -849,7 +849,7 @@ F 4 "Analog Devices" H 6250 3650 50  0001 L BNN "Field4"
 F 5 "ADG732BSUZ-ND" H 6250 3650 50  0001 L BNN "Field5"
 F 6 "https://www.digikey.com/product-detail/en/analog-devices-inc/ADG732BSUZ/ADG732BSUZ-ND/820118?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 6250 3650 50  0001 L BNN "Field6"
 F 7 "TQFP -48 Analog Devices" H 6250 3650 50  0001 L BNN "Field7"
-F 8 "ADG732BSUZ" H 6250 3650 50  0001 L BNN "Field8"
+F 8 "ADG732BSUZ" H 6250 3650 50  0001 L BNN "MPN"
 	1    6250 3650
 	1    0    0    -1  
 $EndComp

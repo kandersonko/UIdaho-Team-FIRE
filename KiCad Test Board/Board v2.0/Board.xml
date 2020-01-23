@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>/Users/CollinHeist/Documents/Academia/Senior Design/KiCad Test Board/Board v2.0/Board.sch</source>
-    <date>Tuesday, January 21, 2020 at 01:47:13 PM</date>
+    <source>/Users/CollinHeist/Documents/GitHub/UIdaho-Team-FIRE/KiCad Test Board/Board v2.0/Board.sch</source>
+    <date>Tuesday, January 21, 2020 at 03:24:53 PM</date>
     <tool>Eeschema (5.1.4-0-10_14)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -32,12 +32,12 @@
       <tstamp>5DE95C9F</tstamp>
     </comp>
     <comp ref="R2">
-      <value>1M</value>
-      <footprint>Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder</footprint>
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_MiniMELF_MMA-0204</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">SL1TTE1L00J</field>
-        <field name="TC">+180 PPM/C</field>
+        <field name="MPN">MCF25SJR-1K</field>
+        <field name="TC">+200 PPM/C</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -226,7 +226,7 @@
       <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">1206F104Z100CT</field>
+        <field name="MPN">C1206C104Z5VACTU</field>
         <field name="TC">Y5V</field>
       </fields>
       <libsource lib="Device" part="CP1" description="Polarized capacitor, US symbol"/>
@@ -262,7 +262,7 @@
       <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">1206ZD104MAT2A</field>
+        <field name="MPN">QMK316BJ104KL-T</field>
         <field name="TC">X5R</field>
       </fields>
       <libsource lib="Device" part="CP1" description="Polarized capacitor, US symbol"/>
@@ -343,7 +343,7 @@
         <field name="Field5">ADG732BSUZ-ND</field>
         <field name="Field6">https://www.digikey.com/product-detail/en/analog-devices-inc/ADG732BSUZ/ADG732BSUZ-ND/820118?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol</field>
         <field name="Field7">TQFP -48 Analog Devices</field>
-        <field name="Field8">ADG732BSUZ</field>
+        <field name="MPN">ADG732BSUZ</field>
       </fields>
       <libsource lib="component-test" part="ADG732BSUZ" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -494,7 +494,7 @@
       <uri>/Users/CollinHeist/Documents/Academia/AgMeq Lab/KiCad Libraries/kicad-symbols-5.1.4/Device.lib</uri>
     </library>
     <library logical="component-test">
-      <uri>/Users/CollinHeist/Documents/Academia/Senior Design/KiCad Test Board/Board v2.0/component-test.lib</uri>
+      <uri>/Users/CollinHeist/Documents/GitHub/UIdaho-Team-FIRE/KiCad Test Board/Board v2.0/component-test.lib</uri>
     </library>
   </libraries>
   <nets>

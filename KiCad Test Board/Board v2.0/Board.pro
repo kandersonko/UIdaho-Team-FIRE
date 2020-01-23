@@ -1,4 +1,4 @@
-update=Tuesday, December 17, 2019 at 04:39:19 PM
+update=Tuesday, January 21, 2020 at 03:12:19 PM
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=Outputs/netlist-12:17.net
+LastNetListRead=Outputs/netlist-1:21.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
