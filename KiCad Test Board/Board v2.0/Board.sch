@@ -189,51 +189,6 @@ Wire Notes Line
 	3500 3700 4350 3700
 Wire Notes Line
 	4350 2700 4350 3700
-Text Notes 4300 5000 2    50   ~ 10
-Thick Film Resistors\n
-$Comp
-L Device:R R14
-U 1 1 5DEE1E8B
-P 3700 5900
-F 0 "R14" V 3500 5900 50  0000 C CNN
-F 1 "10k" V 3600 5900 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3630 5900 50  0001 C CNN
-F 3 "~" H 3700 5900 50  0001 C CNN
-F 4 "RN73R2BTTD1001B05" V 3700 5900 50  0001 C CNN "MPN"
-F 5 "+100 PPM/C" V 3600 6250 50  0000 C CNN "TC"
-	1    3700 5900
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R13
-U 1 1 5DEE1E94
-P 3700 5600
-F 0 "R13" V 3500 5600 50  0000 C CNN
-F 1 "10k" V 3600 5600 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3630 5600 50  0001 C CNN
-F 3 "~" H 3700 5600 50  0001 C CNN
-F 4 "RN73H2BTTD1001B25" V 3700 5600 50  0001 C CNN "MPN"
-F 5 "+200 PPM/C" V 3600 5950 50  0000 C CNN "TC"
-	1    3700 5600
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R12
-U 1 1 5DEE1E9C
-P 3700 5300
-F 0 "R12" V 3500 5300 50  0000 C CNN
-F 1 "10k" V 3600 5300 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3630 5300 50  0001 C CNN
-F 3 "~" H 3700 5300 50  0001 C CNN
-F 4 "RN73H2BTTD1001B10" V 3700 5300 50  0001 C CNN "MPN"
-F 5 "+50 PPM/C" V 3600 5650 50  0000 C CNN "TC"
-	1    3700 5300
-	0    1    1    0   
-$EndComp
-Wire Notes Line
-	3500 6000 4350 6000
-Wire Notes Line
-	4350 6000 4350 5000
 $Comp
 L Device:R R10
 U 1 1 5DEE1EAE
@@ -309,32 +264,13 @@ Wire Notes Line
 	4350 3850 3500 3850
 Wire Notes Line
 	4350 4850 3500 4850
-Wire Notes Line
-	3500 5000 3500 6000
-Wire Notes Line
-	4350 5000 3500 5000
 Wire Wire Line
 	3450 3600 3550 3600
 Connection ~ 3450 3600
 Wire Wire Line
-	3450 5900 3550 5900
-Wire Wire Line
 	3450 3600 3450 4150
 Wire Wire Line
-	3550 5600 3450 5600
-Connection ~ 3450 5600
-Wire Wire Line
-	3450 5600 3450 5900
-Wire Wire Line
-	3550 5300 3450 5300
-Connection ~ 3450 5300
-Wire Wire Line
-	3450 5300 3450 5600
-Wire Wire Line
 	3550 4750 3450 4750
-Connection ~ 3450 4750
-Wire Wire Line
-	3450 4750 3450 5300
 Wire Wire Line
 	3550 4450 3450 4450
 Connection ~ 3450 4450
@@ -687,24 +623,6 @@ Wire Wire Line
 Wire Wire Line
 	4650 4350 5350 4350
 Wire Wire Line
-	3850 5300 4700 5300
-Wire Wire Line
-	4700 5300 4700 4450
-Wire Wire Line
-	4700 4450 5350 4450
-Wire Wire Line
-	3850 5600 4750 5600
-Wire Wire Line
-	4750 5600 4750 4550
-Wire Wire Line
-	4750 4550 5350 4550
-Wire Wire Line
-	3850 5900 4800 5900
-Wire Wire Line
-	4800 5900 4800 4650
-Wire Wire Line
-	4800 4650 5350 4650
-Wire Wire Line
 	7150 3250 7400 3250
 Wire Wire Line
 	7400 3250 7400 1000
@@ -882,4 +800,10 @@ Wire Wire Line
 Connection ~ 9200 1150
 Wire Wire Line
 	9200 1150 9200 1600
+Text GLabel 5350 4650 0    50   Input ~ 0
+GND
+Text GLabel 5350 4550 0    50   Input ~ 0
+GND
+Text GLabel 5350 4450 0    50   Input ~ 0
+GND
 $EndSCHEMATC
