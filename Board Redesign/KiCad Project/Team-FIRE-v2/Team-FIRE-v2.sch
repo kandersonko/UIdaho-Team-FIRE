@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Team-FIRE-v2-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -13,4 +14,463 @@ Comment2 ""
 Comment3 ""
 Comment4 "Koffi Anderson, Collin Heist, Shelby Linafelter"
 $EndDescr
+$Comp
+L Team-FIRE:LT3959EUHE#PBF IC?
+U 1 1 5E462295
+P 1700 1300
+F 0 "IC?" H 2400 1565 50  0000 C CNN
+F 1 "LT3959EUHE#PBF" H 2400 1474 50  0000 C CNN
+F 2 "Team-FIRE:LT3959EUHEPBF" H 2950 1400 50  0001 L CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/3959fa.pdf" H 2950 1300 50  0001 L CNN
+F 4 "Switching Voltage Regulators Wide Input Voltage Range Boost/SEPIC/Inverting Converter with 5A, 40V Switch" H 2950 1200 50  0001 L CNN "Description"
+F 5 "3" H 2950 1100 50  0001 L CNN "Height"
+F 6 "Analog Devices" H 2950 1000 50  0001 L CNN "Manufacturer_Name"
+F 7 "LT3959EUHE#PBF" H 2950 900 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "584-LT3959EUHE#PBF" H 2950 800 50  0001 L CNN "Mouser Part Number"
+	1    1700 1300
+	1    0    0    -1  
+$EndComp
+Text Notes 1900 850  0    79   ~ 16
+LT3959 Boost
+Wire Wire Line
+	1700 1300 1600 1300
+Wire Wire Line
+	1600 1300 1600 1400
+Wire Wire Line
+	1600 1400 1700 1400
+Wire Wire Line
+	1600 1400 1600 1500
+Wire Wire Line
+	1600 1500 1700 1500
+Connection ~ 1600 1400
+Wire Wire Line
+	1600 1500 1600 1600
+Wire Wire Line
+	1600 1600 1700 1600
+Connection ~ 1600 1500
+Wire Wire Line
+	1700 1700 1600 1700
+Wire Wire Line
+	1600 1700 1600 1600
+Connection ~ 1600 1600
+$Comp
+L power:GNDS #PWR?
+U 1 1 5E4680B9
+P 1600 1200
+F 0 "#PWR?" H 1600 950 50  0001 C CNN
+F 1 "GNDS" H 1605 1027 50  0000 C CNN
+F 2 "" H 1600 1200 50  0001 C CNN
+F 3 "" H 1600 1200 50  0001 C CNN
+	1    1600 1200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1600 1200 1600 1300
+Connection ~ 1600 1300
+Wire Wire Line
+	3100 2600 3200 2600
+Wire Wire Line
+	3200 2600 3200 2300
+Wire Wire Line
+	3200 1500 3100 1500
+Wire Wire Line
+	3100 1400 3200 1400
+Wire Wire Line
+	3200 1400 3200 1500
+Connection ~ 3200 1500
+Wire Wire Line
+	3100 2300 3200 2300
+Connection ~ 3200 2300
+Wire Wire Line
+	3200 2300 3200 1500
+$Comp
+L power:GNDS #PWR?
+U 1 1 5E468E5E
+P 3200 1200
+F 0 "#PWR?" H 3200 950 50  0001 C CNN
+F 1 "GNDS" H 3205 1027 50  0000 C CNN
+F 2 "" H 3200 1200 50  0001 C CNN
+F 3 "" H 3200 1200 50  0001 C CNN
+	1    3200 1200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3200 1200 3200 1400
+Connection ~ 3200 1400
+Wire Wire Line
+	1600 1700 1600 2100
+Wire Wire Line
+	1600 2100 1700 2100
+Connection ~ 1600 1700
+$Comp
+L power:GND #PWR?
+U 1 1 5E469C06
+P 1600 2800
+F 0 "#PWR?" H 1600 2550 50  0001 C CNN
+F 1 "GND" H 1605 2627 50  0000 C CNN
+F 2 "" H 1600 2800 50  0001 C CNN
+F 3 "" H 1600 2800 50  0001 C CNN
+	1    1600 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 2200 1600 2200
+Wire Wire Line
+	1600 2200 1600 2300
+Wire Wire Line
+	1700 2600 1600 2600
+Connection ~ 1600 2600
+Wire Wire Line
+	1600 2600 1600 2800
+Wire Wire Line
+	1700 2500 1600 2500
+Connection ~ 1600 2500
+Wire Wire Line
+	1600 2500 1600 2600
+Wire Wire Line
+	1700 2400 1600 2400
+Connection ~ 1600 2400
+Wire Wire Line
+	1600 2400 1600 2500
+Wire Wire Line
+	1700 2300 1600 2300
+Connection ~ 1600 2300
+Wire Wire Line
+	1600 2300 1600 2400
+Wire Wire Line
+	3700 2500 3700 2600
+$Comp
+L Device:C C?
+U 1 1 5E46B4E1
+P 3700 2750
+F 0 "C?" H 3750 2850 50  0000 L CNN
+F 1 "10uF" H 3700 2650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3738 2600 50  0001 C CNN
+F 3 "~" H 3700 2750 50  0001 C CNN
+	1    3700 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5E46B98B
+P 4300 3000
+F 0 "#PWR?" H 4300 2750 50  0001 C CNN
+F 1 "GNDA" H 4305 2827 50  0000 C CNN
+F 2 "" H 4300 3000 50  0001 C CNN
+F 3 "" H 4300 3000 50  0001 C CNN
+	1    4300 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 2900 3700 2950
+$Comp
+L Device:R R?
+U 1 1 5E46C34B
+P 3450 2200
+F 0 "R?" V 3400 2050 50  0000 C CNN
+F 1 "10k" V 3400 2400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3380 2200 50  0001 C CNN
+F 3 "~" H 3450 2200 50  0001 C CNN
+	1    3450 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3100 2500 3700 2500
+Wire Wire Line
+	3600 2200 3700 2200
+Wire Wire Line
+	3700 2200 3700 2500
+Connection ~ 3700 2500
+Wire Wire Line
+	3300 2200 3100 2200
+$Comp
+L Device:C C?
+U 1 1 5E46EA3C
+P 4000 2750
+F 0 "C?" H 4050 2850 50  0000 L CNN
+F 1 "0.1uF" H 4000 2650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4038 2600 50  0001 C CNN
+F 3 "~" H 4000 2750 50  0001 C CNN
+	1    4000 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 2900 4000 2950
+Wire Wire Line
+	4300 2950 4300 3000
+Wire Wire Line
+	4000 2100 4000 2600
+$Comp
+L Device:R R?
+U 1 1 5E471016
+P 4600 2350
+F 0 "R?" H 4500 2300 50  0000 C CNN
+F 1 "3.3k" H 4450 2400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4530 2350 50  0001 C CNN
+F 3 "~" H 4600 2350 50  0001 C CNN
+	1    4600 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E471AD7
+P 4600 2750
+F 0 "C?" H 4450 2650 50  0000 L CNN
+F 1 "22nF" H 4400 2850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4638 2600 50  0001 C CNN
+F 3 "~" H 4600 2750 50  0001 C CNN
+	1    4600 2750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3100 2100 4000 2100
+Wire Wire Line
+	3700 2950 4000 2950
+Wire Wire Line
+	4600 2900 4600 2950
+Wire Wire Line
+	4600 1900 4600 2200
+Wire Wire Line
+	4600 2500 4600 2600
+$Comp
+L Device:C C?
+U 1 1 5E47D6E7
+P 4900 2750
+F 0 "C?" H 4750 2650 50  0000 L CNN
+F 1 "50pF" H 4700 2850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4938 2600 50  0001 C CNN
+F 3 "~" H 4900 2750 50  0001 C CNN
+	1    4900 2750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4600 1900 4900 1900
+Wire Wire Line
+	4900 1900 4900 2600
+Connection ~ 4600 1900
+Wire Wire Line
+	4900 2900 4900 2950
+Wire Wire Line
+	4900 2950 4600 2950
+Connection ~ 4600 2950
+$Comp
+L Device:R R?
+U 1 1 5E48137C
+P 4300 2750
+F 0 "R?" H 4400 2850 50  0000 C CNN
+F 1 "3.3k" H 4450 2650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4230 2750 50  0001 C CNN
+F 3 "~" H 4300 2750 50  0001 C CNN
+	1    4300 2750
+	1    0    0    -1  
+$EndComp
+Connection ~ 4000 2950
+Wire Wire Line
+	3100 1900 4600 1900
+Wire Wire Line
+	3100 1800 3300 1800
+$Comp
+L Device:R R?
+U 1 1 5E48874A
+P 3450 1800
+F 0 "R?" V 3500 1950 50  0000 C CNN
+F 1 "59k" V 3500 1600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3380 1800 50  0001 C CNN
+F 3 "~" H 3450 1800 50  0001 C CNN
+	1    3450 1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4300 2000 4300 1800
+Wire Wire Line
+	4000 2950 4300 2950
+Wire Wire Line
+	4300 2900 4300 2950
+Connection ~ 4300 2950
+Wire Wire Line
+	4300 2950 4600 2950
+Wire Wire Line
+	4300 2600 4300 2000
+Connection ~ 4300 2000
+Wire Wire Line
+	3100 2000 4300 2000
+Wire Wire Line
+	3600 1800 4300 1800
+Wire Wire Line
+	4300 1800 4400 1800
+Connection ~ 4300 1800
+Text GLabel 4400 1800 2    39   Input ~ 8
++30V
+$Comp
+L Connector:SIM_Card J?
+U 1 1 5E4941BB
+P 4950 6350
+F 0 "J?" H 4600 6750 50  0000 L CNN
+F 1 "SIM_Card" H 5200 6750 50  0000 L CNN
+F 2 "" H 4950 6700 50  0001 C CNN
+F 3 " ~" H 4900 6350 50  0001 C CNN
+	1    4950 6350
+	1    0    0    -1  
+$EndComp
+Text Notes 950  5550 0    79   ~ 16
+SIM NCN4555 & Card Holder\n
+Wire Wire Line
+	4450 6350 4350 6350
+$Comp
+L power:GND #PWR?
+U 1 1 5E496D80
+P 4350 6700
+F 0 "#PWR?" H 4350 6450 50  0001 C CNN
+F 1 "GND" H 4355 6527 50  0000 C CNN
+F 2 "" H 4350 6700 50  0001 C CNN
+F 3 "" H 4350 6700 50  0001 C CNN
+	1    4350 6700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4450 6450
+Text GLabel 4250 6550 0    39   Input ~ 0
+SIM_IO
+Text GLabel 4250 6250 0    39   Input ~ 0
+SIM_CLOCK
+Text GLabel 4250 6150 0    39   Input ~ 0
+SIM_RESET
+Text GLabel 3750 6050 0    39   Input ~ 0
+SIM_VCC
+$Comp
+L Device:C C?
+U 1 1 5E4A12BE
+P 3800 6400
+F 0 "C?" H 3650 6500 50  0000 L CNN
+F 1 "1uF" H 3650 6300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3838 6250 50  0001 C CNN
+F 3 "~" H 3800 6400 50  0001 C CNN
+	1    3800 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 6550 4250 6550
+Wire Wire Line
+	4250 6150 4450 6150
+Wire Wire Line
+	4450 6250 4250 6250
+Wire Wire Line
+	3750 6050 3800 6050
+Wire Wire Line
+	3800 6250 3800 6050
+Connection ~ 3800 6050
+Wire Wire Line
+	3800 6050 4450 6050
+Wire Wire Line
+	4350 6350 4350 6650
+Wire Wire Line
+	4350 6650 3800 6650
+Wire Wire Line
+	3800 6650 3800 6550
+Connection ~ 4350 6650
+Wire Wire Line
+	4350 6650 4350 6700
+$Comp
+L Logic_LevelTranslator:NCN4555MN U?
+U 1 1 5E4AE7B2
+P 2100 6300
+F 0 "U?" H 1700 6750 50  0000 C CNN
+F 1 "NCN4555MN" H 2500 6750 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.75x1.75mm" H 3400 5850 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NCN4555-D.PDF" H 500 6100 50  0001 C CNN
+	1    2100 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 6800 2100 6900
+$Comp
+L power:GND #PWR?
+U 1 1 5E4B7BEA
+P 2100 6900
+F 0 "#PWR?" H 2100 6650 50  0001 C CNN
+F 1 "GND" H 2105 6727 50  0000 C CNN
+F 2 "" H 2100 6900 50  0001 C CNN
+F 3 "" H 2100 6900 50  0001 C CNN
+	1    2100 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 6200 1500 6200
+Text GLabel 1500 6200 0    39   Input ~ 0
+IR_SIM_VCC
+Text GLabel 2750 6300 2    39   Input ~ 0
+SIM_VCC
+Wire Wire Line
+	2750 6300 2600 6300
+Text GLabel 2750 6400 2    39   Input ~ 0
+SIM_RESET
+Wire Wire Line
+	2750 6400 2600 6400
+Text GLabel 2750 6500 2    39   Input ~ 0
+SIM_CLOCK
+Wire Wire Line
+	2750 6500 2600 6500
+Text GLabel 2750 6600 2    39   Input ~ 0
+SIM_IO
+Wire Wire Line
+	2750 6600 2600 6600
+Text GLabel 1500 6400 0    39   Input ~ 0
+IR_SIM_RESET
+Wire Wire Line
+	1500 6400 1600 6400
+Text GLabel 1500 6500 0    39   Input ~ 0
+IR_SIM_CLK
+Wire Wire Line
+	1500 6500 1600 6500
+Text GLabel 1500 6600 0    39   Input ~ 0
+IR_SIM_IO
+Wire Wire Line
+	1600 6600 1500 6600
+Wire Wire Line
+	2000 5800 2000 5700
+Wire Wire Line
+	2200 5700 2200 5800
+Wire Wire Line
+	2000 5700 2200 5700
+Text GLabel 1900 5700 0    39   Input ~ 0
+IR_5V
+Connection ~ 2000 5700
+Wire Wire Line
+	2200 5700 3200 5700
+Connection ~ 2200 5700
+$Comp
+L Device:C C?
+U 1 1 5E4CBE86
+P 3200 6650
+F 0 "C?" H 3315 6696 50  0000 L CNN
+F 1 "0.1u" H 3315 6605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3238 6500 50  0001 C CNN
+F 3 "~" H 3200 6650 50  0001 C CNN
+	1    3200 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E4CC402
+P 3200 6900
+F 0 "#PWR?" H 3200 6650 50  0001 C CNN
+F 1 "GND" H 3205 6727 50  0000 C CNN
+F 2 "" H 3200 6900 50  0001 C CNN
+F 3 "" H 3200 6900 50  0001 C CNN
+	1    3200 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 5700 2000 5700
+Wire Wire Line
+	3200 6500 3200 5700
+Wire Wire Line
+	3200 6800 3200 6900
+Wire Notes Line
+	950  7200 5750 7200
+Wire Notes Line
+	5750 7200 5750 5550
+Wire Notes Line
+	5750 5550 950  5550
+Wire Notes Line
+	950  5550 950  7200
 $EndSCHEMATC
