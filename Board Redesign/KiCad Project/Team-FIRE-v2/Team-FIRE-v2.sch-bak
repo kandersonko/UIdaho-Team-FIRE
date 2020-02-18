@@ -304,71 +304,71 @@ Text GLabel 4400 1800 2    39   Input ~ 8
 $Comp
 L Connector:SIM_Card J?
 U 1 1 5E4941BB
-P 5050 6350
-F 0 "J?" H 4700 6750 50  0000 L CNN
-F 1 "SIM_Card" H 5300 6750 50  0000 L CNN
-F 2 "" H 5050 6700 50  0001 C CNN
-F 3 " ~" H 5000 6350 50  0001 C CNN
-	1    5050 6350
+P 4950 6350
+F 0 "J?" H 4600 6750 50  0000 L CNN
+F 1 "SIM_Card" H 5200 6750 50  0000 L CNN
+F 2 "" H 4950 6700 50  0001 C CNN
+F 3 " ~" H 4900 6350 50  0001 C CNN
+	1    4950 6350
 	1    0    0    -1  
 $EndComp
 Text Notes 950  5550 0    79   ~ 16
 SIM NCN4555 & Card Holder\n
 Wire Wire Line
-	4550 6350 4450 6350
+	4450 6350 4350 6350
 $Comp
 L power:GND #PWR?
 U 1 1 5E496D80
-P 4450 6700
-F 0 "#PWR?" H 4450 6450 50  0001 C CNN
-F 1 "GND" H 4455 6527 50  0000 C CNN
-F 2 "" H 4450 6700 50  0001 C CNN
-F 3 "" H 4450 6700 50  0001 C CNN
-	1    4450 6700
+P 4350 6700
+F 0 "#PWR?" H 4350 6450 50  0001 C CNN
+F 1 "GND" H 4355 6527 50  0000 C CNN
+F 2 "" H 4350 6700 50  0001 C CNN
+F 3 "" H 4350 6700 50  0001 C CNN
+	1    4350 6700
 	1    0    0    -1  
 $EndComp
-NoConn ~ 4550 6450
-Text GLabel 4350 6550 0    39   Input ~ 0
+NoConn ~ 4450 6450
+Text GLabel 4250 6550 0    39   Input ~ 0
 SIM_IO
-Text GLabel 4350 6250 0    39   Input ~ 0
+Text GLabel 4250 6250 0    39   Input ~ 0
 SIM_CLOCK
-Text GLabel 4350 6150 0    39   Input ~ 0
+Text GLabel 4250 6150 0    39   Input ~ 0
 SIM_RESET
-Text GLabel 3850 6050 0    39   Input ~ 0
+Text GLabel 3750 6050 0    39   Input ~ 0
 SIM_VCC
 $Comp
 L Device:C C?
 U 1 1 5E4A12BE
-P 3900 6400
-F 0 "C?" H 3750 6500 50  0000 L CNN
-F 1 "1uF" H 3750 6300 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3938 6250 50  0001 C CNN
-F 3 "~" H 3900 6400 50  0001 C CNN
-	1    3900 6400
+P 3800 6400
+F 0 "C?" H 3650 6500 50  0000 L CNN
+F 1 "1uF" H 3650 6300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3838 6250 50  0001 C CNN
+F 3 "~" H 3800 6400 50  0001 C CNN
+	1    3800 6400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4550 6550 4350 6550
+	4450 6550 4250 6550
 Wire Wire Line
-	4350 6150 4550 6150
+	4250 6150 4450 6150
 Wire Wire Line
-	4550 6250 4350 6250
+	4450 6250 4250 6250
 Wire Wire Line
-	3850 6050 3900 6050
+	3750 6050 3800 6050
 Wire Wire Line
-	3900 6250 3900 6050
-Connection ~ 3900 6050
+	3800 6250 3800 6050
+Connection ~ 3800 6050
 Wire Wire Line
-	3900 6050 4550 6050
+	3800 6050 4450 6050
 Wire Wire Line
-	4450 6350 4450 6650
+	4350 6350 4350 6650
 Wire Wire Line
-	4450 6650 3900 6650
+	4350 6650 3800 6650
 Wire Wire Line
-	3900 6650 3900 6550
-Connection ~ 4450 6650
+	3800 6650 3800 6550
+Connection ~ 4350 6650
 Wire Wire Line
-	4450 6650 4450 6700
+	4350 6650 4350 6700
 $Comp
 L Logic_LevelTranslator:NCN4555MN U?
 U 1 1 5E4AE7B2
@@ -431,7 +431,7 @@ Wire Wire Line
 	2200 5700 2200 5800
 Wire Wire Line
 	2000 5700 2200 5700
-Text GLabel 1900 5700 0    39   Input ~ 0
+Text GLabel 1900 5700 0    39   Input ~ 8
 IR_5V
 Connection ~ 2000 5700
 Wire Wire Line
@@ -473,4 +473,248 @@ Wire Notes Line
 	5750 5550 950  5550
 Wire Notes Line
 	950  5550 950  7200
+Text Notes 8100 1050 0    79   ~ 16
+Iridium 9523 Connector\n
+NoConn ~ 7850 1550
+NoConn ~ 7850 1650
+NoConn ~ 7850 1850
+NoConn ~ 7850 1950
+NoConn ~ 7850 2150
+NoConn ~ 9900 2150
+NoConn ~ 9900 1950
+NoConn ~ 9900 1850
+NoConn ~ 9900 1650
+Wire Wire Line
+	7850 1750 7750 1750
+Wire Wire Line
+	7750 1750 7750 2050
+$Comp
+L power:GND #PWR?
+U 1 1 5E4B8838
+P 7750 3550
+F 0 "#PWR?" H 7750 3300 50  0001 C CNN
+F 1 "GND" H 7755 3377 50  0000 C CNN
+F 2 "" H 7750 3550 50  0001 C CNN
+F 3 "" H 7750 3550 50  0001 C CNN
+	1    7750 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 2050 7750 2050
+Wire Wire Line
+	9900 1750 10000 1750
+Wire Wire Line
+	10000 1750 10000 2050
+$Comp
+L power:GND #PWR?
+U 1 1 5E4BF7A6
+P 10000 3550
+F 0 "#PWR?" H 10000 3300 50  0001 C CNN
+F 1 "GND" H 10005 3377 50  0000 C CNN
+F 2 "" H 10000 3550 50  0001 C CNN
+F 3 "" H 10000 3550 50  0001 C CNN
+	1    10000 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 3250 10000 3250
+Connection ~ 10000 3250
+Wire Wire Line
+	10000 3250 10000 3550
+Wire Wire Line
+	9900 2050 10000 2050
+Connection ~ 10000 2050
+Wire Wire Line
+	10000 2050 10000 3250
+Wire Wire Line
+	7650 3450 7650 3350
+Wire Wire Line
+	7650 3350 7850 3350
+Wire Wire Line
+	7650 3250 7650 3350
+Connection ~ 7650 3350
+Text GLabel 7350 3250 0    39   Input ~ 8
+IR_5V
+$Comp
+L Device:C C?
+U 1 1 5E4CCD40
+P 7450 3450
+F 0 "C?" H 7200 3500 50  0000 L CNN
+F 1 "0.1uF" H 7100 3400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7488 3300 50  0001 C CNN
+F 3 "~" H 7450 3450 50  0001 C CNN
+	1    7450 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 3350 10100 3350
+Wire Wire Line
+	10100 3350 10100 3450
+Wire Wire Line
+	10100 3450 9900 3450
+Wire Wire Line
+	7350 3250 7450 3250
+Wire Wire Line
+	7450 3300 7450 3250
+Wire Wire Line
+	7850 3150 7750 3150
+Wire Wire Line
+	7750 2050 7750 3150
+Connection ~ 7750 2050
+Wire Wire Line
+	7850 3450 7650 3450
+Wire Wire Line
+	7850 3250 7650 3250
+Connection ~ 7650 3250
+Wire Wire Line
+	7450 3250 7650 3250
+Connection ~ 7450 3250
+Wire Wire Line
+	7750 3550 7750 3150
+Connection ~ 7750 3150
+$Comp
+L power:GND #PWR?
+U 1 1 5E54293D
+P 7450 3600
+F 0 "#PWR?" H 7450 3350 50  0001 C CNN
+F 1 "GND" H 7455 3427 50  0000 C CNN
+F 2 "" H 7450 3600 50  0001 C CNN
+F 3 "" H 7450 3600 50  0001 C CNN
+	1    7450 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 3050 7650 3050
+Wire Wire Line
+	7850 2950 7650 2950
+Text GLabel 7650 2950 0    39   Input ~ 0
+MODE_SW
+Text GLabel 7650 3050 0    39   Input ~ 0
+PWR_EN,2.4E
+Text GLabel 7650 2850 0    39   Input ~ 0
+RF_EN,3.5C
+Text GLabel 7650 2750 0    39   Input ~ 0
+IR_SIM_RST
+Text GLabel 7650 2650 0    39   Input ~ 0
+IR_SIM_CLK
+Text GLabel 7650 2550 0    39   Input ~ 0
+DTR,2.1A
+Text GLabel 7650 2450 0    39   Input ~ 0
+RI,2.1A
+Text GLabel 7650 2350 0    39   Input ~ 0
+DCD,2.1A
+Text GLabel 7650 2250 0    39   Input ~ 0
+TX,2.1B
+Wire Wire Line
+	7850 2850 7650 2850
+Wire Wire Line
+	7850 2750 7650 2750
+Wire Wire Line
+	7850 2650 7650 2650
+Wire Wire Line
+	7850 2550 7650 2550
+Wire Wire Line
+	7850 2450 7650 2450
+Wire Wire Line
+	7850 2350 7650 2350
+Wire Wire Line
+	7650 2250 7850 2250
+$Comp
+L Team-FIRE:53885-0408 J?
+U 1 1 5E56C902
+P 8850 2500
+F 0 "J?" H 8875 3715 50  0000 C CNN
+F 1 "53885-0408" H 8875 3624 50  0000 C CNN
+F 2 "Team-FIRE:538850408" H 10250 3250 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/53885-0408.pdf" H 8000 3450 50  0001 L CNN
+F 4 "Board to Board & Mezzanine Connectors" H 10250 3350 50  0001 L CNN "Description"
+F 5 "1.68" H 10250 3150 50  0001 L CNN "Height"
+F 6 "538-53885-0408" H 10250 3050 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=538-53885-0408" H 10250 3450 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Molex" H 10250 2850 50  0001 L CNN "Manufacturer_Name"
+F 9 "53885-0408" H 10250 2750 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8850 2500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9900 1550
+Text GLabel 10100 2250 2    39   Input ~ 0
+RX,2.1B
+Text GLabel 10100 2350 2    39   Input ~ 0
+CTS,2.1B
+Text GLabel 10100 2450 2    39   Input ~ 0
+DSR,2.1B
+Text GLabel 10100 2550 2    39   Input ~ 0
+RTS,2.1A
+Text GLabel 10100 2650 2    39   Input ~ 0
+IR_SIM_V
+Text GLabel 10100 2750 2    39   Input ~ 0
+IR_SIM_EN,3.5C
+Text GLabel 10100 2850 2    39   Input ~ 0
+IR_SIM_IO
+Text GLabel 10100 2950 2    39   Input ~ 0
+3.3V_SENSE,2.1A
+Text GLabel 10100 3050 2    39   Input ~ 0
+TX_ACTIVE,2.1E
+Text GLabel 10100 3150 2    39   Input ~ 0
+BOOST_EN,2.4E
+Wire Wire Line
+	9900 2250 10100 2250
+Wire Wire Line
+	9900 2350 10100 2350
+Wire Wire Line
+	9900 2450 10100 2450
+Wire Wire Line
+	9900 2550 10100 2550
+Wire Wire Line
+	9900 2650 10100 2650
+Wire Wire Line
+	9900 2750 10100 2750
+Wire Wire Line
+	9900 2850 10100 2850
+Wire Wire Line
+	9900 2950 10100 2950
+Wire Wire Line
+	9900 3050 10100 3050
+Wire Wire Line
+	9900 3150 10100 3150
+$Comp
+L Device:C C?
+U 1 1 5E597D87
+P 10300 3550
+F 0 "C?" H 10400 3600 50  0000 L CNN
+F 1 "0.1uF" H 10400 3500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10338 3400 50  0001 C CNN
+F 3 "~" H 10300 3550 50  0001 C CNN
+	1    10300 3550
+	1    0    0    -1  
+$EndComp
+Connection ~ 10100 3350
+Wire Wire Line
+	10100 3350 10300 3350
+Wire Wire Line
+	10300 3350 10300 3400
+$Comp
+L power:GND #PWR?
+U 1 1 5E5AC932
+P 10300 3700
+F 0 "#PWR?" H 10300 3450 50  0001 C CNN
+F 1 "GND" H 10305 3527 50  0000 C CNN
+F 2 "" H 10300 3700 50  0001 C CNN
+F 3 "" H 10300 3700 50  0001 C CNN
+	1    10300 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 3350 10400 3350
+Connection ~ 10300 3350
+Text GLabel 10400 3350 2    39   Input ~ 8
++30V
+Wire Notes Line
+	10800 1050 6950 1050
+Wire Notes Line
+	6950 1050 6950 4050
+Wire Notes Line
+	6950 4050 10800 4050
+Wire Notes Line
+	10800 4050 10800 1050
 $EndSCHEMATC

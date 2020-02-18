@@ -1,12 +1,8 @@
 EESchema-DOCLIB  Version 2.0
 #
-$CMP 53885-0408
-D Board to Board & Mezzanine Connectors
-F https://componentsearchengine.com/Datasheets/1/53885-0408.pdf
-$ENDCMP
-#
 $CMP LT3959EUHE#PBF
 D Switching Voltage Regulators Wide Input Voltage Range Boost/SEPIC/Inverting Converter with 5A, 40V Switch
+K
 F https://www.analog.com/media/en/technical-documentation/data-sheets/3959fa.pdf
 $ENDCMP
 #
