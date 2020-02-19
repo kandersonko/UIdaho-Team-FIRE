@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SX1509BIULTRT
+D Interface - I/O Expanders 16 CHAN LOW VOLT I2C GPIO +PWM
+K
+F https://componentsearchengine.com/Datasheets/1/SX1509BIULTRT.pdf
+$ENDCMP
+#
+#End Doc Library
