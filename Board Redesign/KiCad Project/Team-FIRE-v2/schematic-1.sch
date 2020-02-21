@@ -5,14 +5,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 3
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Team FIRE Board Redesign"
+Date "2020-02-20"
+Rev "v2.0"
+Comp "University of Idaho"
 Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 ""
+Comment4 "Koffi Anderson, Collin Heist, Shelby Linafelter"
 $EndDescr
 Text Notes 7000 850  0    79   ~ 16
 Iridium 9523 Connector\n
@@ -74,7 +74,7 @@ Wire Wire Line
 Wire Wire Line
 	7700 3050 7700 3150
 Connection ~ 7700 3150
-Text GLabel 7400 3050 0    39   Input ~ 8
+Text GLabel 7400 3050 0    39   Input ~ 0
 IR_5V
 $Comp
 L Device:C C?
@@ -131,21 +131,21 @@ Wire Wire Line
 Text GLabel 7700 2750 0    39   Input ~ 0
 MODE_SW
 Text GLabel 7700 2850 0    39   Input ~ 0
-PWR_EN,2.4E
+PWR_EN
 Text GLabel 7700 2650 0    39   Input ~ 0
-RF_EN,3.5C
+RF_EN
 Text GLabel 7700 2550 0    39   Input ~ 0
 IR_SIM_RST
 Text GLabel 7700 2450 0    39   Input ~ 0
 IR_SIM_CLK
 Text GLabel 7700 2350 0    39   Input ~ 0
-DTR,2.1A
+DTR
 Text GLabel 7700 2250 0    39   Input ~ 0
-RI,2.1A
+RI
 Text GLabel 7700 2150 0    39   Input ~ 0
-DCD,2.1A
+DCD
 Text GLabel 7700 2050 0    39   Input ~ 0
-TX,2.1B
+TX
 Wire Wire Line
 	7900 2650 7700 2650
 Wire Wire Line
@@ -179,25 +179,25 @@ F 9 "53885-0408" H 10300 2550 50  0001 L CNN "Manufacturer_Part_Number"
 $EndComp
 NoConn ~ 9950 1350
 Text GLabel 10150 2050 2    39   Input ~ 0
-RX,2.1B
+RX
 Text GLabel 10150 2150 2    39   Input ~ 0
-CTS,2.1B
+CTS
 Text GLabel 10150 2250 2    39   Input ~ 0
-DSR,2.1B
+DSR
 Text GLabel 10150 2350 2    39   Input ~ 0
-RTS,2.1A
+RTS
 Text GLabel 10150 2450 2    39   Input ~ 0
 IR_SIM_V
 Text GLabel 10150 2550 2    39   Input ~ 0
-IR_SIM_EN,3.5C
+IR_SIM_EN
 Text GLabel 10150 2650 2    39   Input ~ 0
 IR_SIM_IO
 Text GLabel 10150 2750 2    39   Input ~ 0
-3.3V_SENSE,2.1A
+3.3V_SENSE
 Text GLabel 10150 2850 2    39   Input ~ 0
-TX_ACTIVE,2.1E
+TX_ACTIVE
 Text GLabel 10150 2950 2    39   Input ~ 0
-BOOST_EN,2.4E
+BOOST_EN
 Wire Wire Line
 	9950 2050 10150 2050
 Wire Wire Line
@@ -248,7 +248,7 @@ $EndComp
 Wire Wire Line
 	10350 3150 10450 3150
 Connection ~ 10350 3150
-Text GLabel 10450 3150 2    39   Input ~ 8
+Text GLabel 10450 3150 2    39   Input ~ 0
 +30V
 Wire Notes Line
 	10850 850  7000 850 
@@ -398,7 +398,7 @@ Wire Wire Line
 	2250 6000 2250 6100
 Wire Wire Line
 	2050 6000 2250 6000
-Text GLabel 1950 6000 0    39   Input ~ 8
+Text GLabel 1950 6000 0    39   Input ~ 0
 IR_5V
 Connection ~ 2050 6000
 Wire Wire Line
@@ -755,6 +755,6 @@ Wire Wire Line
 Wire Wire Line
 	4950 1800 5050 1800
 Connection ~ 4950 1800
-Text GLabel 5050 1800 2    39   Input ~ 8
+Text GLabel 5050 1800 2    39   Input ~ 0
 +30V
 $EndSCHEMATC
