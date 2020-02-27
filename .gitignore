@@ -1,1 +1,9 @@
+# untrack IDE generated file
 *.DS_Store
+
+# untrack cache and backup files
+/**/*-cache
+/**/*-bak
+/**/*-bck
+
+
