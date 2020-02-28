@@ -1,12 +1,11 @@
 EESchema Schematic File Version 4
-LIBS:Team-FIRE-v2-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
-Title "Team FIRE Board Redesign"
-Date "2020-02-20"
+Sheet 3 4
+Title "Team FIRE Flight-Ready Iridium Carrier"
+Date "2020-02-24"
 Rev "v2.0"
 Comp "University of Idaho"
 Comment1 ""
@@ -243,10 +242,10 @@ Bus Translators\n
 Text Notes 2600 2850 0    50   ~ 0
 Ensure bus is disabled\nprior to power-up and\nshutdown of 9523.
 $Comp
-L Logic_LevelTranslator:TXB0104RUT U?
+L Logic_LevelTranslator:TXB0104RUT U7
 U 1 1 5E538631
 P 2250 4400
-F 0 "U?" H 2400 3700 50  0000 C CNN
+F 0 "U7" H 2400 3700 50  0000 C CNN
 F 1 "TXB0104RUT" H 2550 3600 50  0000 C CNN
 F 2 "Package_DFN_QFN:Texas_R_PUQFN-N12" H 2250 3650 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/txb0104.pdf" H 2360 4495 50  0001 C CNN
@@ -756,4 +755,288 @@ Wire Wire Line
 Connection ~ 2350 3600
 Text Notes 2600 4000 0    50   ~ 0
 VCCB is typically\ntied to 3.3V
+Text Notes 8250 1650 0    79   ~ 16
+SAMD...21 or 51
+Wire Notes Line
+	4100 6300 10400 6300
+Wire Notes Line
+	10400 6300 10400 4500
+Wire Notes Line
+	10400 4500 4100 4500
+Wire Notes Line
+	4100 4500 4100 6300
+Text Notes 4150 4500 0    79   ~ 16
+uC Support
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_10 J?
+U 1 1 5E6DB242
+P 6450 5350
+F 0 "J?" V 5869 5350 50  0000 C CNN
+F 1 "Conn_ARM_JTAG_SWD_10" V 5960 5350 50  0000 C CNN
+F 2 "" H 6450 5350 50  0001 C CNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 6100 4100 50  0001 C CNN
+	1    6450 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E6DD1DD
+P 7200 5100
+F 0 "#PWR?" H 7200 4950 50  0001 C CNN
+F 1 "+3.3V" H 7100 5250 50  0000 L CNN
+F 2 "" H 7200 5100 50  0001 C CNN
+F 3 "" H 7200 5100 50  0001 C CNN
+	1    7200 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 5100 7200 5350
+Wire Wire Line
+	7200 5350 7050 5350
+$Comp
+L power:GND #PWR?
+U 1 1 5E6E026F
+P 5750 5600
+F 0 "#PWR?" H 5750 5350 50  0001 C CNN
+F 1 "GND" H 5750 5450 50  0000 C CNN
+F 2 "" H 5750 5600 50  0001 C CNN
+F 3 "" H 5750 5600 50  0001 C CNN
+	1    5750 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 5350 5750 5350
+Wire Wire Line
+	5750 5350 5750 5600
+Text GLabel 6150 6000 0    39   Input ~ 0
+SWDIO
+Text GLabel 6150 6150 0    39   Input ~ 0
+SWCLK
+Text GLabel 7050 6000 2    39   Input ~ 0
+RST
+Wire Wire Line
+	6750 5850 6750 6000
+Wire Wire Line
+	6750 6000 7050 6000
+Wire Wire Line
+	6550 5850 6550 6150
+Wire Wire Line
+	6550 6150 6150 6150
+Wire Wire Line
+	6450 5850 6450 6000
+Wire Wire Line
+	6450 6000 6150 6000
+Text Notes 6800 6150 0    50   ~ 0
+Keep reset button?
+$Comp
+L Connector:USB_B_Mini J?
+U 1 1 5E6EF352
+P 4700 5250
+F 0 "J?" H 4757 5717 50  0000 C CNN
+F 1 "USB_B_Mini" H 4757 5626 50  0000 C CNN
+F 2 "" H 4850 5200 50  0001 C CNN
+F 3 "~" H 4850 5200 50  0001 C CNN
+	1    4700 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E6F0DA3
+P 4600 5900
+F 0 "#PWR?" H 4600 5650 50  0001 C CNN
+F 1 "GND" H 4600 5750 50  0000 C CNN
+F 2 "" H 4600 5900 50  0001 C CNN
+F 3 "" H 4600 5900 50  0001 C CNN
+	1    4600 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 5650 4600 5800
+Wire Wire Line
+	4600 5800 4700 5800
+Wire Wire Line
+	4700 5800 4700 5650
+Connection ~ 4600 5800
+Wire Wire Line
+	4600 5800 4600 5900
+Text GLabel 5300 5250 2    39   Input ~ 0
+USB_D+
+Text GLabel 5300 5350 2    39   Input ~ 0
+USB_D-
+Wire Wire Line
+	5300 5250 5000 5250
+Wire Wire Line
+	5300 5350 5000 5350
+$Comp
+L Device:LED_Small D?
+U 1 1 5E707545
+P 7900 5250
+F 0 "D?" V 7854 5348 50  0000 L CNN
+F 1 "Blue" V 7945 5348 50  0000 L CNN
+F 2 "" V 7900 5250 50  0001 C CNN
+F 3 "~" V 7900 5250 50  0001 C CNN
+	1    7900 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 5E7081BA
+P 8550 5250
+F 0 "D?" V 8504 5348 50  0000 L CNN
+F 1 "Blue" V 8595 5348 50  0000 L CNN
+F 2 "" V 8550 5250 50  0001 C CNN
+F 3 "~" V 8550 5250 50  0001 C CNN
+	1    8550 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 5E7085D2
+P 9300 5600
+F 0 "D?" V 9346 5532 50  0000 R CNN
+F 1 "Orange" V 9255 5532 50  0000 R CNN
+F 2 "" V 9300 5600 50  0001 C CNN
+F 3 "~" V 9300 5600 50  0001 C CNN
+	1    9300 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 5E709852
+P 9950 5600
+F 0 "D?" V 9996 5532 50  0000 R CNN
+F 1 "Orange" V 9905 5532 50  0000 R CNN
+F 2 "" V 9950 5600 50  0001 C CNN
+F 3 "~" V 9950 5600 50  0001 C CNN
+	1    9950 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E709BE1
+P 9300 5000
+F 0 "#PWR?" H 9300 4850 50  0001 C CNN
+F 1 "+3.3V" H 9200 5150 50  0000 L CNN
+F 2 "" H 9300 5000 50  0001 C CNN
+F 3 "" H 9300 5000 50  0001 C CNN
+	1    9300 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E70A194
+P 9950 5000
+F 0 "#PWR?" H 9950 4850 50  0001 C CNN
+F 1 "+3.3V" H 9850 5150 50  0000 L CNN
+F 2 "" H 9950 5000 50  0001 C CNN
+F 3 "" H 9950 5000 50  0001 C CNN
+	1    9950 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E70A4EC
+P 7900 5000
+F 0 "#PWR?" H 7900 4750 50  0001 C CNN
+F 1 "GND" H 7900 4850 50  0000 C CNN
+F 2 "" H 7900 5000 50  0001 C CNN
+F 3 "" H 7900 5000 50  0001 C CNN
+	1    7900 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E70B5A5
+P 8550 5000
+F 0 "#PWR?" H 8550 4750 50  0001 C CNN
+F 1 "GND" H 8550 4850 50  0000 C CNN
+F 2 "" H 8550 5000 50  0001 C CNN
+F 3 "" H 8550 5000 50  0001 C CNN
+	1    8550 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E70B7B8
+P 7900 5650
+F 0 "R?" V 8000 5550 50  0000 L CNN
+F 1 "330" V 8100 5550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7830 5650 50  0001 C CNN
+F 3 "~" H 7900 5650 50  0001 C CNN
+	1    7900 5650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E70C353
+P 8550 5650
+F 0 "R?" V 8650 5550 50  0000 L CNN
+F 1 "330" V 8750 5550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8480 5650 50  0001 C CNN
+F 3 "~" H 8550 5650 50  0001 C CNN
+	1    8550 5650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E7177B2
+P 9300 5250
+F 0 "R?" V 9400 5150 50  0000 L CNN
+F 1 "330" V 9500 5150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9230 5250 50  0001 C CNN
+F 3 "~" H 9300 5250 50  0001 C CNN
+	1    9300 5250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E717AD1
+P 9950 5250
+F 0 "R?" V 10050 5150 50  0000 L CNN
+F 1 "330" V 10150 5150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9880 5250 50  0001 C CNN
+F 3 "~" H 9950 5250 50  0001 C CNN
+	1    9950 5250
+	-1   0    0    1   
+$EndComp
+Text GLabel 8000 6000 2    39   Input ~ 0
+I2_LED
+Text GLabel 8650 6000 2    39   Input ~ 0
+SYS_LED
+Text GLabel 9400 6000 2    39   Input ~ 0
+TX_LED
+Text GLabel 10050 6000 2    39   Input ~ 0
+RX_LED
+Wire Wire Line
+	7900 5000 7900 5150
+Wire Wire Line
+	7900 5350 7900 5500
+Wire Wire Line
+	7900 5800 7900 6000
+Wire Wire Line
+	7900 6000 8000 6000
+Wire Wire Line
+	8550 5000 8550 5150
+Wire Wire Line
+	8550 5350 8550 5500
+Wire Wire Line
+	8550 5800 8550 6000
+Wire Wire Line
+	8550 6000 8650 6000
+Wire Wire Line
+	9300 5700 9300 6000
+Wire Wire Line
+	9300 6000 9400 6000
+Wire Wire Line
+	9300 5400 9300 5500
+Wire Wire Line
+	9300 5000 9300 5100
+Wire Wire Line
+	9950 5000 9950 5100
+Wire Wire Line
+	9950 5400 9950 5500
+Wire Wire Line
+	9950 5700 9950 6000
+Wire Wire Line
+	9950 6000 10050 6000
 $EndSCHEMATC

@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title "Team FIRE Board Redesign"
 Date "2020-02-20"
 Rev "v2.0"
@@ -25,5 +25,11 @@ S 1000 2500 2500 1000
 U 5E4F8378
 F0 "schematic-2" 50
 F1 "schematic-2.sch" 50
+$EndSheet
+$Sheet
+S 1000 3950 2500 1050
+U 5E585515
+F0 "schematic-3" 50
+F1 "schematic-3.sch" 50
 $EndSheet
 $EndSCHEMATC
