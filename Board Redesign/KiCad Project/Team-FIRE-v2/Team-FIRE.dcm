@@ -5,6 +5,11 @@ D Board to Board & Mezzanine Connectors
 F https://componentsearchengine.com/Datasheets/1/53885-0408.pdf
 $ENDCMP
 #
+$CMP ATSAMD51N20A-AU
+D MICROCHIP - ATSAMD51N20A-AU - 120MHZ 1024KB FLASH 100 TQFP PKG INTRAY
+F https://componentsearchengine.com/Datasheets/1/ATSAMD51N20A-AU.pdf
+$ENDCMP
+#
 $CMP LT3959EUHE#PBF
 D Switching Voltage Regulators Wide Input Voltage Range Boost/SEPIC/Inverting Converter with 5A, 40V Switch
 F https://www.analog.com/media/en/technical-documentation/data-sheets/3959fa.pdf

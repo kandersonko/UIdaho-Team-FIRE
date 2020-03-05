@@ -32,4 +32,6 @@ U 5E585515
 F0 "schematic-3" 50
 F1 "schematic-3.sch" 50
 $EndSheet
+Text Notes 3600 2750 0    28   ~ 0
+SAMD51 Checklist:\n- From https://www.mouser.com/datasheet/2/268/60001507E-1660031.pdf#page=2096&zoom=100,0,0\n- Voltage of [1.71, 3.63] V must be applied to VDDIO and VDDANA.\n- Voltage VDDIOB must be lower or equal to VDDIO / VDDANA.\n- Verify the power supply is appropriately set for Switching / Linear mode.
 $EndSCHEMATC
