@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name "Iridium_Carrier_(2)-eagle-import")(type Legacy)(uri "${KIPRJMOD}/Iridium_Carrier_(2)-eagle-import.lib")(options "")(descr ""))
+  (lib (name ATSAMD51N20A-AU)(type Legacy)(uri "${KIPRJMOD}/KiCad Project/Team-FIRE-v2/ATSAMD51N20A-AU/KiCad/ATSAMD51N20A-AU.lib")(options "")(descr ""))
 )

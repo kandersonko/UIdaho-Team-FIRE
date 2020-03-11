@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name Team-FIRE)(type Legacy)(uri ${KIPRJMOD}/Team-FIRE.lib)(options "")(descr ""))
+  (lib (name ATSAMD51N20A-AU-01)(type Legacy)(uri ${KIPRJMOD}/ATSAMD51N20A-AU/KiCad/ATSAMD51N20A-AU-01.lib)(options "")(descr ""))
 )
