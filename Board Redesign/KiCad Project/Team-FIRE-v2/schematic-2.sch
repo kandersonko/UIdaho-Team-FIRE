@@ -1034,7 +1034,7 @@ Wire Wire Line
 	10300 2250 10300 2350
 Wire Wire Line
 	8700 1850 10300 1850
-Text Notes 6850 5250 0    50   ~ 10
+Text Notes 6950 6300 0    50   ~ 0
 SAMD51 Checklist:\n- From https://www.mouser.com/datasheet/2/268/60001507E-1660031.pdf#page=2096&zoom=100,0,0\n- Voltage of [1.71, 3.63] V must be applied to VDDIO and VDDANA.\n- Voltage VDDIOB must be lower or equal to VDDIO / VDDANA.\n- Verify the power supply is appropriately set for Switching / Linear mode.\n- We need a pull-up resistor on the SWCLK pin\n- We need a RC filter on ~RESET\n-  We need to eliminate or attenuate noise in\norder to avoid that it reaches supply pins, I/O pins and crystals.
 $Comp
 L ATSAMD51N20A-AU-01:ATSAMD51N20A-AU U?
@@ -1053,7 +1053,7 @@ F 9 "ATSAMD51N20A-AU" H 12000 4300 50  0001 L CNN "Manufacturer_Part_Number"
 	1    5800 2250
 	1    0    0    -1  
 $EndComp
-Text Notes 4450 650  0    50   ~ 10
+Text Notes 4450 650  0    50   ~ 0
 PB03 Battery power supply input
 $Comp
 L power:+3.3V #PWR?
@@ -1164,17 +1164,59 @@ Wire Notes Line
 Wire Notes Line
 	4000 5800 5950 5800
 Wire Notes Line
-	5950 4100 4000 4100
-Wire Notes Line
 	5950 4100 5950 5800
 Text Notes 4000 4100 0    50   ~ 10
 Reset button
 Text GLabel 5600 5050 2    50   Input ~ 10
 RST
-Text Notes 4050 4250 0    40   ~ 8
+Text Notes 4050 4250 0    40   ~ 0
 A software reset is nice. But, we might need to\n manually reset the SAMD.
-Text Notes 7250 3900 0    50   ~ 10
+Text Notes 7250 3900 0    50   ~ 0
 The SAMD51 symbol:\n- should be updated to include pin types (input/output, etc)\n- should be divided into (functional) units. Right now it is taking too much space
-Text Notes 8200 1300 0    50   ~ 10
-We might need to put the decoupling capacitors into the uC support block
+Text Notes 8100 1300 0    50   Italic 0
+We might need to put the decoupling capacitors into the uC support block\nAlso, there are two more decoupling capacitors on sheet 1/3, so technically \ntwo mores capacitor are added to this list. Maybe we should remove the one \none sheet 1/3 and keep these ones below?
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E8E3A4A
+P 7200 4650
+F 0 "#PWR?" H 7200 4500 50  0001 C CNN
+F 1 "+3.3V" H 7215 4823 50  0000 C CNN
+F 2 "" H 7200 4650 50  0001 C CNN
+F 3 "" H 7200 4650 50  0001 C CNN
+	1    7200 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E8E4009
+P 7200 4900
+F 0 "R?" H 7270 4946 50  0000 L CNN
+F 1 "1k" H 7270 4855 50  0000 L CNN
+F 2 "" V 7130 4900 50  0001 C CNN
+F 3 "~" H 7200 4900 50  0001 C CNN
+	1    7200 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 4650 7200 4750
+Wire Wire Line
+	7200 5050 7200 5200
+Wire Wire Line
+	7200 5200 7600 5200
+Text Label 7350 5200 0    20   ~ 4
+SWCLK
+Wire Notes Line
+	6750 4200 7950 4200
+Wire Notes Line
+	7950 4200 7950 5250
+Wire Notes Line
+	7950 5250 6750 5250
+Wire Notes Line
+	6750 4200 6750 5250
+Wire Notes Line
+	4000 4100 5950 4100
+Text Notes 6750 4200 0    20   ~ 4
+SWCLK Pin
+Text Notes 6800 4300 0    20   ~ 4
+This shouldn't be block, just here as a note to add a pull-up resistor\nto ensure reliable operation
 $EndSCHEMATC
