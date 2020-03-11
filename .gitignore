@@ -1,9 +1,28 @@
 # untrack IDE generated file
 *.DS_Store
 
-# untrack cache and backup files
-/**/*-cache
-/**/*-bak
-/**/*-bck
 
+# usefull gitignore pattern from [github.com/gitignore]
+# Temporary files
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.sch-bak
+*~
+_autosave-*
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+fp-info-cache
 
+# Netlist files (exported from Eeschema)
+*.net
+
+# Autorouter files (exported from Pcbnew)
+*.dsn
+*.ses
+
+# Exported BOM files
+*.xml
+*.csv
