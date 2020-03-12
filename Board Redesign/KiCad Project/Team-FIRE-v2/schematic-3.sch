@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Team-FIRE-v2-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -22,17 +21,9 @@ Wire Notes Line
 	10900 6050 10900 4750
 Wire Notes Line
 	10900 4750 6900 4750
-Wire Notes Line
-	6900 1500 6900 3950
-Wire Notes Line
-	6900 3950 10900 3950
-Wire Notes Line
-	10900 3950 10900 1500
-Wire Notes Line
-	10900 1500 6900 1500
 Text Notes 6950 4750 0    79   ~ 16
 RF Connector
-Text Notes 6900 1500 0    79   ~ 16
+Text Notes 6850 850  0    79   ~ 16
 Test Points
 Text Notes 1050 1000 0    79   ~ 16
 Iridium PMICs
@@ -63,7 +54,25 @@ Wire Notes Line
 Wire Notes Line
 	4900 3450 1050 3450
 Text Notes 1050 3450 0    79   ~ 16
-3.3V Linear Reg
+5V to 3.3V Linear Reg
 Text Notes 1300 1350 0    50   ~ 0
 Need to load new parts (library doesn't contain out PMICs or Load Reg.)
+Wire Notes Line
+	6900 2600 6900 4100
+Wire Notes Line
+	6900 4100 10750 4100
+Wire Notes Line
+	10750 4100 10750 2600
+Wire Notes Line
+	10750 2600 6900 2600
+Text Notes 6900 2600 0    79   ~ 16
+8V to 5V Switching Regulator
+Wire Notes Line
+	6850 850  6850 2350
+Wire Notes Line
+	6850 2350 10700 2350
+Wire Notes Line
+	10700 2350 10700 850 
+Wire Notes Line
+	10700 850  6850 850 
 $EndSCHEMATC
