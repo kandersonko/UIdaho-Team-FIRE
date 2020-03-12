@@ -444,7 +444,7 @@ Connection ~ 2350 3600
 Text Notes 2600 4000 0    50   ~ 0
 VCCB is typically\ntied to 3.3V
 Text Notes 8200 700  0    79   ~ 16
-SAMD...21 or 51
+SAMD 51
 Wire Notes Line
 	6450 7700 6450 5900
 Wire Notes Line
