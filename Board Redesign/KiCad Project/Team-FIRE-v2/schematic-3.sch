@@ -14,14 +14,14 @@ Comment3 ""
 Comment4 "Koffi Anderson, Collin Heist, Shelby Linafelter"
 $EndDescr
 Wire Notes Line
-	6900 4750 6900 6050
+	6850 4750 6850 6050
 Wire Notes Line
-	6900 6050 10900 6050
+	6850 6050 10850 6050
 Wire Notes Line
-	10900 6050 10900 4750
+	10850 6050 10850 4750
 Wire Notes Line
-	10900 4750 6900 4750
-Text Notes 6950 4750 0    79   ~ 16
+	10850 4750 6850 4750
+Text Notes 6900 4750 0    79   ~ 16
 RF Connector
 Text Notes 6850 850  0    79   ~ 16
 Test Points
@@ -58,14 +58,14 @@ Text Notes 1050 3450 0    79   ~ 16
 Text Notes 1300 1350 0    50   ~ 0
 Need to load new parts (library doesn't contain out PMICs or Load Reg.)
 Wire Notes Line
-	6900 2600 6900 4100
+	6850 2800 6850 4300
 Wire Notes Line
-	6900 4100 10750 4100
+	6850 4300 10700 4300
 Wire Notes Line
-	10750 4100 10750 2600
+	10700 4300 10700 2800
 Wire Notes Line
-	10750 2600 6900 2600
-Text Notes 6900 2600 0    79   ~ 16
+	10700 2800 6850 2800
+Text Notes 6850 2800 0    79   ~ 16
 8V to 5V Switching Regulator
 Wire Notes Line
 	6850 850  6850 2350
