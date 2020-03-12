@@ -1037,25 +1037,6 @@ Wire Wire Line
 Text Notes 6950 6300 0    50   ~ 0
 SAMD51 Checklist:\n- From https://www.mouser.com/datasheet/2/268/60001507E-1660031.pdf#page=2096&zoom=100,0,0\n- Voltage of [1.71, 3.63] V must be applied to VDDIO and VDDANA.\n- Voltage VDDIOB must be lower or equal to VDDIO / VDDANA.\n- Verify the power supply is appropriately set for Switching / Linear mode.\n- We need a pull-up resistor on the SWCLK pin\n- We need a RC filter on ~RESET\n-  We need to eliminate or attenuate noise in\norder to avoid that it reaches supply pins, I/O pins and crystals.
 $Comp
-L ATSAMD51N20A-AU-01:ATSAMD51N20A-AU U?
-U 1 1 5E7088C1
-P 5800 2250
-F 0 "U?" H 7694 2246 50  0000 L CNN
-F 1 "ATSAMD51N20A-AU" H 7694 2155 50  0000 L CNN
-F 2 "QFP50P1600X1600X120-100N" H 12000 5000 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/ATSAMD51N20A-AU.pdf" H 12000 4900 50  0001 L CNN
-F 4 "MICROCHIP - ATSAMD51N20A-AU - 120MHZ 1024KB FLASH 100 TQFP PKG INTRAY" H 12000 4800 50  0001 L CNN "Description"
-F 5 "1.2" H 12000 4700 50  0001 L CNN "Height"
-F 6 "556-ATSAMD51N20AAU" H 12000 4600 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=556-ATSAMD51N20AAU" H 12000 4500 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Microchip" H 12000 4400 50  0001 L CNN "Manufacturer_Name"
-F 9 "ATSAMD51N20A-AU" H 12000 4300 50  0001 L CNN "Manufacturer_Part_Number"
-	1    5800 2250
-	1    0    0    -1  
-$EndComp
-Text Notes 4450 650  0    50   ~ 0
-PB03 Battery power supply input
-$Comp
 L power:+3.3V #PWR?
 U 1 1 5E78FC12
 P 5100 4500
@@ -1149,14 +1130,6 @@ Wire Wire Line
 	5100 5450 5100 5550
 Wire Wire Line
 	5100 5050 5600 5050
-Text Label 5250 5050 0    50   ~ 10
-~RESET
-Text Label 5950 700  0    50   ~ 10
-~RESET
-Wire Wire Line
-	5750 800  5750 700 
-Wire Wire Line
-	5750 700  6200 700 
 Wire Wire Line
 	5100 4500 5100 4650
 Wire Notes Line
@@ -1167,7 +1140,7 @@ Wire Notes Line
 	5950 4100 5950 5800
 Text Notes 4000 4100 0    50   ~ 10
 Reset button
-Text GLabel 5600 5050 2    50   Input ~ 10
+Text GLabel 5600 5050 2    50   Input ~ 0
 RST
 Text Notes 4050 4250 0    40   ~ 0
 A software reset is nice. But, we might need to\n manually reset the SAMD.
@@ -1175,48 +1148,181 @@ Text Notes 7250 3900 0    50   ~ 0
 The SAMD51 symbol:\n- should be updated to include pin types (input/output, etc)\n- should be divided into (functional) units. Right now it is taking too much space
 Text Notes 8100 1300 0    50   Italic 0
 We might need to put the decoupling capacitors into the uC support block\nAlso, there are two more decoupling capacitors on sheet 1/3, so technically \ntwo mores capacitor are added to this list. Maybe we should remove the one \none sheet 1/3 and keep these ones below?
+Wire Notes Line
+	7250 4950 6050 4950
+Wire Notes Line
+	4000 4100 5950 4100
+Text GLabel 5050 800  1    50   Input ~ 0
+SWCLK
+Text GLabel 5750 800  1    50   Input ~ 0
+RST
+Text GLabel 4950 800  1    50   Input ~ 0
+SWDIO
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5E8E3A4A
-P 7200 4650
-F 0 "#PWR?" H 7200 4500 50  0001 C CNN
-F 1 "+3.3V" H 7215 4823 50  0000 C CNN
-F 2 "" H 7200 4650 50  0001 C CNN
-F 3 "" H 7200 4650 50  0001 C CNN
-	1    7200 4650
+P 6500 4450
+F 0 "#PWR?" H 6500 4300 50  0001 C CNN
+F 1 "+3.3V" H 6515 4623 50  0000 C CNN
+F 2 "" H 6500 4450 50  0001 C CNN
+F 3 "" H 6500 4450 50  0001 C CNN
+	1    6500 4450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 5E8E4009
-P 7200 4900
-F 0 "R?" H 7270 4946 50  0000 L CNN
-F 1 "1k" H 7270 4855 50  0000 L CNN
-F 2 "" V 7130 4900 50  0001 C CNN
-F 3 "~" H 7200 4900 50  0001 C CNN
-	1    7200 4900
+P 6500 4600
+F 0 "R?" H 6570 4646 50  0000 L CNN
+F 1 "1k" H 6570 4555 50  0000 L CNN
+F 2 "" V 6430 4600 50  0001 C CNN
+F 3 "~" H 6500 4600 50  0001 C CNN
+	1    6500 4600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7200 4650 7200 4750
+	6500 4800 6600 4800
 Wire Wire Line
-	7200 5050 7200 5200
-Wire Wire Line
-	7200 5200 7600 5200
-Text Label 7350 5200 0    20   ~ 4
+	6500 4750 6500 4800
+Text GLabel 6600 4800 2    50   Input ~ 0
 SWCLK
-Wire Notes Line
-	6750 4200 7950 4200
-Wire Notes Line
-	7950 4200 7950 5250
-Wire Notes Line
-	7950 5250 6750 5250
-Wire Notes Line
-	6750 4200 6750 5250
-Wire Notes Line
-	4000 4100 5950 4100
-Text Notes 6750 4200 0    20   ~ 4
-SWCLK Pin
-Text Notes 6800 4300 0    20   ~ 4
+Text Notes 6100 4200 0    20   ~ 4
 This shouldn't be block, just here as a note to add a pull-up resistor\nto ensure reliable operation
+Text Notes 6050 4100 0    20   ~ 4
+SWCLK Pin
+Wire Notes Line
+	6050 4100 6050 4950
+Wire Notes Line
+	7250 4100 7250 4950
+Wire Notes Line
+	6050 4100 7250 4100
+$Comp
+L ATSAMD51N20A-AU-01:ATSAMD51N20A-AU U?
+U 1 1 5E7088C1
+P 5800 2250
+F 0 "U?" H 7694 2246 50  0000 L CNN
+F 1 "ATSAMD51N20A-AU" H 7694 2155 50  0000 L CNN
+F 2 "QFP50P1600X1600X120-100N" H 12000 5000 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/ATSAMD51N20A-AU.pdf" H 12000 4900 50  0001 L CNN
+F 4 "MICROCHIP - ATSAMD51N20A-AU - 120MHZ 1024KB FLASH 100 TQFP PKG INTRAY" H 12000 4800 50  0001 L CNN "Description"
+F 5 "1.2" H 12000 4700 50  0001 L CNN "Height"
+F 6 "556-ATSAMD51N20AAU" H 12000 4600 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=556-ATSAMD51N20AAU" H 12000 4500 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Microchip" H 12000 4400 50  0001 L CNN "Manufacturer_Name"
+F 9 "ATSAMD51N20A-AU" H 12000 4300 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5800 2250
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3050 7250
+Text GLabel 6050 800  1    50   Input ~ 0
+SWO
+Text GLabel 7650 1200 2    50   Input ~ 0
+USB_D-
+Text GLabel 7650 1100 2    50   Input ~ 0
+USB_D+
+Text GLabel 5850 800  1    50   Input ~ 0
+TX_LED
+Text GLabel 7650 1400 2    50   Input ~ 0
+SDA
+Text GLabel 7650 1300 2    50   Input ~ 0
+SDL
+Text GLabel 4550 800  1    50   Input ~ 0
+RX_LED
+Text GLabel 6750 800  1    50   Input ~ 0
+TX
+Text GLabel 6650 800  1    50   Input ~ 0
+RX
+Text GLabel 5350 3800 3    50   Input ~ 0
+MISO
+Text GLabel 5450 3800 3    50   Input ~ 0
+MOSI
+Text GLabel 5550 3800 3    50   Input ~ 0
+SCK
+$Comp
+L Device:Crystal Y?
+U 1 1 5E7E2304
+P 8150 4800
+F 0 "Y?" V 8104 4931 50  0000 L CNN
+F 1 "32.768kHz" V 8195 4931 50  0000 L CNN
+F 2 "" H 8150 4800 50  0001 C CNN
+F 3 "~" H 8150 4800 50  0001 C CNN
+	1    8150 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E7F9A5F
+P 7850 4550
+F 0 "C?" V 7598 4550 50  0000 C CNN
+F 1 "15pF" V 7689 4550 50  0000 C CNN
+F 2 "" H 7888 4400 50  0001 C CNN
+F 3 "~" H 7850 4550 50  0001 C CNN
+	1    7850 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E7F9EAB
+P 7850 5050
+F 0 "C?" V 8102 5050 50  0000 C CNN
+F 1 "15pF" V 8011 5050 50  0000 C CNN
+F 2 "" H 7888 4900 50  0001 C CNN
+F 3 "~" H 7850 5050 50  0001 C CNN
+	1    7850 5050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E7FA91C
+P 7600 5150
+F 0 "#PWR?" H 7600 4900 50  0001 C CNN
+F 1 "GND" H 7605 4977 50  0000 C CNN
+F 2 "" H 7600 5150 50  0001 C CNN
+F 3 "" H 7600 5150 50  0001 C CNN
+	1    7600 5150
+	1    0    0    -1  
+$EndComp
+Text GLabel 8350 4550 2    50   Input ~ 0
+XIN32
+Text GLabel 8350 5050 2    50   Input ~ 0
+XOUT32
+Wire Notes Line
+	7450 5400 9300 5400
+Wire Notes Line
+	9300 5400 9300 4250
+Wire Notes Line
+	9300 4250 7450 4250
+Wire Notes Line
+	7450 4250 7450 5400
+Text Notes 7450 4250 0    50   ~ 10
+Crystal oscillator
+Text Notes 8000 4450 0    50   ~ 0
+Should be closed to the SAMD \nto avoid crosstalk to other parts
+Wire Wire Line
+	8000 4550 8150 4550
+Wire Wire Line
+	8150 4650 8150 4550
+Connection ~ 8150 4550
+Wire Wire Line
+	8150 4550 8350 4550
+Wire Wire Line
+	8000 5050 8150 5050
+Wire Wire Line
+	8150 4950 8150 5050
+Connection ~ 8150 5050
+Wire Wire Line
+	8150 5050 8350 5050
+Wire Wire Line
+	7700 4550 7600 4550
+Wire Wire Line
+	7600 4550 7600 5050
+Wire Wire Line
+	7600 5050 7700 5050
+Wire Wire Line
+	7600 5050 7600 5150
+Connection ~ 7600 5050
+Text GLabel 3950 1100 0    50   Input ~ 0
+XIN32
+Text GLabel 3950 1200 0    50   Input ~ 0
+XOUT32
 $EndSCHEMATC
