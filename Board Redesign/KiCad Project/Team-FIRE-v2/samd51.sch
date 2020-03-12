@@ -98,8 +98,6 @@ Wire Wire Line
 Wire Wire Line
 	1100 1150 1000 1150
 Wire Wire Line
-	1000 1150 1000 1200
-Wire Wire Line
 	1000 1650 1100 1650
 Wire Wire Line
 	1000 1650 1000 1750
@@ -609,8 +607,6 @@ Text Notes 7200 4150 0    50   ~ 0
 The SAMD51 symbol:\n- should be updated to include pin types (input/output, etc)
 Text Notes 7950 1500 0    50   Italic 0
 We might need to put the decoupling capacitors into the uC support block
-Wire Wire Line
-	1000 1600 1000 1650
 Text Notes 7050 5350 0    50   ~ 0
 SAMD51 Checklist:\n- From https://www.mouser.com/datasheet/2/268/60001507E-1660031.pdf#page=2096&zoom=100,0,0\n- Voltage of [1.71, 3.63] V must be applied to VDDIO and VDDANA.\n- Voltage VDDIOB must be lower or equal to VDDIO / VDDANA.\n- Verify the power supply is appropriately set for Switching / Linear mode.\n+ We need a pull-up resistor on the SWCLK pin\n+ We need a RC filter on ~RESET\n-  We need to eliminate or attenuate noise in\norder to avoid that it reaches supply pins, I/O pins and crystals.
 Text GLabel 5500 4250 3    50   Input ~ 0
@@ -660,4 +656,8 @@ F 5 "ATSAMD51N20A-AU" H 5400 1600 28  0001 C CNN "MPN"
 	1    6000 2600
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1000 1600 1000 1650
+Wire Wire Line
+	1000 1150 1000 1650
 $EndSCHEMATC
