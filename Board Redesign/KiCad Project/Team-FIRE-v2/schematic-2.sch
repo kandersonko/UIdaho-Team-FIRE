@@ -1035,7 +1035,7 @@ Wire Wire Line
 Wire Wire Line
 	8700 1850 10300 1850
 Text Notes 6950 6300 0    50   ~ 0
-SAMD51 Checklist:\n- From https://www.mouser.com/datasheet/2/268/60001507E-1660031.pdf#page=2096&zoom=100,0,0\n- Voltage of [1.71, 3.63] V must be applied to VDDIO and VDDANA.\n- Voltage VDDIOB must be lower or equal to VDDIO / VDDANA.\n- Verify the power supply is appropriately set for Switching / Linear mode.\n- We need a pull-up resistor on the SWCLK pin\n- We need a RC filter on ~RESET\n-  We need to eliminate or attenuate noise in\norder to avoid that it reaches supply pins, I/O pins and crystals.
+SAMD51 Checklist:\n- From https://www.mouser.com/datasheet/2/268/60001507E-1660031.pdf#page=2096&zoom=100,0,0\n- Voltage of [1.71, 3.63] V must be applied to VDDIO and VDDANA.\n- Voltage VDDIOB must be lower or equal to VDDIO / VDDANA.\n- Verify the power supply is appropriately set for Switching / Linear mode.\n+ We need a pull-up resistor on the SWCLK pin\n+ We need a RC filter on ~RESET\n-  We need to eliminate or attenuate noise in\norder to avoid that it reaches supply pins, I/O pins and crystals.
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5E78FC12
@@ -1144,10 +1144,10 @@ Text GLabel 5600 5050 2    50   Input ~ 0
 RST
 Text Notes 4050 4250 0    40   ~ 0
 A software reset is nice. But, we might need to\n manually reset the SAMD.
-Text Notes 7250 3900 0    50   ~ 0
-The SAMD51 symbol:\n- should be updated to include pin types (input/output, etc)\n- should be divided into (functional) units. Right now it is taking too much space
+Text Notes 7350 3950 0    50   ~ 0
+The SAMD51 symbol:\n- should be updated to include pin types (input/output, etc)\n- should be divided into more (functional) units. \nRight now it is taking too much space
 Text Notes 8100 1300 0    50   Italic 0
-We might need to put the decoupling capacitors into the uC support block\nAlso, there are two more decoupling capacitors on sheet 1/3, so technically \ntwo mores capacitor are added to this list. Maybe we should remove the one \none sheet 1/3 and keep these ones below?
+We might need to put the decoupling capacitors into the uC support block
 Wire Notes Line
 	7250 4950 6050 4950
 Wire Notes Line
