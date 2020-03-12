@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 2 5
 Title "Team FIRE Flight-Ready Iridium Carrier"
 Date "2020-02-24"
 Rev "v2.0"
@@ -474,27 +474,6 @@ F 8 "584-LT3959EUHE#PBF" H 3300 1100 50  0001 L CNN "Mouser Part Number"
 $EndComp
 Text Notes 1200 850  0    79   ~ 16
 LT3959 Boost\n**Needs Redesign
-Wire Wire Line
-	2050 1600 1950 1600
-Wire Wire Line
-	1950 1600 1950 1700
-Wire Wire Line
-	1950 1700 2050 1700
-Wire Wire Line
-	1950 1700 1950 1800
-Wire Wire Line
-	1950 1800 2050 1800
-Connection ~ 1950 1700
-Wire Wire Line
-	1950 1800 1950 1900
-Wire Wire Line
-	1950 1900 2050 1900
-Connection ~ 1950 1800
-Wire Wire Line
-	2050 2000 1950 2000
-Wire Wire Line
-	1950 2000 1950 1900
-Connection ~ 1950 1900
 $Comp
 L power:GNDS #PWR?
 U 1 1 5E4F272B
@@ -510,18 +489,11 @@ F 3 "" H 1950 1500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1950 1500 1950 1600
-Connection ~ 1950 1600
-Wire Wire Line
 	3450 2900 3550 2900
 Wire Wire Line
 	3550 2900 3550 2600
 Wire Wire Line
 	3550 1800 3450 1800
-Wire Wire Line
-	3450 1700 3550 1700
-Wire Wire Line
-	3550 1700 3550 1800
 Connection ~ 3550 1800
 Wire Wire Line
 	3450 2600 3550 2600
@@ -543,13 +515,7 @@ F 3 "" H 3550 1500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3550 1500 3550 1700
-Connection ~ 3550 1700
-Wire Wire Line
-	1950 2000 1950 2400
-Wire Wire Line
 	1950 2400 2050 2400
-Connection ~ 1950 2000
 $Comp
 L power:GND #PWR?
 U 1 1 5E4F2747
@@ -971,4 +937,19 @@ Wire Notes Line
 	6000 6500 6850 6500
 Wire Notes Line
 	6000 7500 6850 7500
+NoConn ~ 2050 1600
+NoConn ~ 2050 1700
+NoConn ~ 2050 1800
+NoConn ~ 2050 2000
+NoConn ~ 2050 2300
+Wire Wire Line
+	3550 1500 3550 1800
+NoConn ~ 3450 1700
+Wire Wire Line
+	2050 1900 1950 1900
+Wire Wire Line
+	1950 1900 1950 1500
+Wire Wire Line
+	1950 1900 1950 2400
+Connection ~ 1950 1900
 $EndSCHEMATC
