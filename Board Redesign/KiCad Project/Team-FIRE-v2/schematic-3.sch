@@ -117,13 +117,13 @@ L Team-FIRE:U.FL-R-SMT_10_ J?
 U 1 1 5EA5F3F4
 P 9600 5450
 F 0 "J?" H 10150 5085 50  0000 C CNN
-F 1 "U.FL-R-SMT_10_" H 10150 5176 50  0000 C CNN
+F 1 "U.FL-R-SMT_10_" H 10150 5086 50  0001 C CNN
 F 2 "UFLRSMT10" H 10550 5550 50  0001 L CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Hirose%20PDFs/UFL%20Series.pdf" H 10550 5450 50  0001 L CNN
 F 4 "RF Connectors / Coaxial Connectors U.FL RECEPTACLE SMT GLD M CONT REEL" H 10550 5350 50  0001 L CNN "Description"
 F 5 "1.25" H 10550 5250 50  0001 L CNN "Height"
 F 6 "Hirose" H 10550 5150 50  0001 L CNN "Manufacturer_Name"
-F 7 "U.FL-R-SMT(10)" H 10550 5050 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "U.FL-R-SMT(10)" H 10150 5176 50  0000 C CNN "MPN"
 F 8 "798-U.FL-R-SMT10" H 10550 4950 50  0001 L CNN "Mouser Part Number"
 F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=798-U.FL-R-SMT10" H 10550 4850 50  0001 L CNN "Mouser Price/Stock"
 	1    9600 5450
@@ -133,19 +133,18 @@ $Comp
 L Team-FIRE:132136RP J?
 U 1 1 5EA604BA
 P 9800 5450
-F 0 "J?" H 10200 5805 50  0000 C CNN
-F 1 "132136RP" H 10200 5714 50  0000 C CNN
+F 0 "J?" H 10200 5715 50  0000 C CNN
+F 1 "132136RP" H 10200 5714 50  0001 C CNN
 F 2 "132136RP" H 10450 5550 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/2/132136RP.pdf" H 10450 5450 50  0001 L CNN
 F 4 "RF Connectors / Coaxial Connectors" H 10450 5350 50  0001 L CNN "Description"
 F 5 "9.86" H 10450 5250 50  0001 L CNN "Height"
 F 6 "Amphenol" H 10450 5150 50  0001 L CNN "Manufacturer_Name"
-F 7 "132136RP" H 10450 5050 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "523-132136RP" H 10450 4950 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=523-132136RP" H 10450 4850 50  0001 L CNN "Mouser Price/Stock"
-F 10 "70032830" H 10450 4550 50  0001 L CNN "Allied_Number"
-F 11 "https://www.alliedelec.com/amphenolrf-132136rp/70032830/" H 10450 4450 50  0001 L CNN "Allied Price/Stock"
-F 12 "132136" H 10200 5623 50  0000 C CNN "MPN"
+F 7 "523-132136RP" H 10450 4950 50  0001 L CNN "Mouser Part Number"
+F 8 "https://www.mouser.com/Search/Refine.aspx?Keyword=523-132136RP" H 10450 4850 50  0001 L CNN "Mouser Price/Stock"
+F 9 "70032830" H 10450 4550 50  0001 L CNN "Allied_Number"
+F 10 "https://www.alliedelec.com/amphenolrf-132136rp/70032830/" H 10450 4450 50  0001 L CNN "Allied Price/Stock"
+F 11 "132136RP" H 10200 5624 50  0000 C CNN "MPN"
 	1    9800 5450
 	1    0    0    -1  
 $EndComp
