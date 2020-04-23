@@ -1,5 +1,10 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 132136RP
+D RF Connectors / Coaxial Connectors
+F https://componentsearchengine.com/Datasheets/2/132136RP.pdf
+$ENDCMP
+#
 $CMP 53885-0408
 D Board to Board & Mezzanine Connectors
 F https://componentsearchengine.com/Datasheets/1/53885-0408.pdf
@@ -18,6 +23,11 @@ $ENDCMP
 $CMP SX1509BIULTRT
 D Interface - I/O Expanders 16 CHAN LOW VOLT I2C GPIO +PWM
 F https://componentsearchengine.com/Datasheets/1/SX1509BIULTRT.pdf
+$ENDCMP
+#
+$CMP U.FL-R-SMT_10_
+D RF Connectors / Coaxial Connectors U.FL RECEPTACLE SMT GLD M CONT REEL
+F https://media.digikey.com/pdf/Data%20Sheets/Hirose%20PDFs/UFL%20Series.pdf
 $ENDCMP
 #
 #End Doc Library

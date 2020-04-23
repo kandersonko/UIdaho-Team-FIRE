@@ -544,6 +544,32 @@ X 2 2 200 0 100 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
+# Team-FIRE_132136RP
+#
+DEF Team-FIRE_132136RP J 0 30 Y Y 1 F N
+F0 "J" 650 300 50 H V L CNN
+F1 "Team-FIRE_132136RP" 650 200 50 H V L CNN
+F2 "132136RP" 650 100 50 H I L CNN
+F3 "" 650 0 50 H I L CNN
+F4 "RF Connectors / Coaxial Connectors" 650 -100 50 H I L CNN "Description"
+F5 "9.86" 650 -200 50 H I L CNN "Height"
+F6 "Amphenol" 650 -300 50 H I L CNN "Manufacturer_Name"
+F7 "132136RP" 650 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "523-132136RP" 650 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.com/Search/Refine.aspx?Keyword=523-132136RP" 650 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "70032830" 650 -900 50 H I L CNN "Allied_Number"
+F11 "https://www.alliedelec.com/amphenolrf-132136rp/70032830/" 650 -1000 50 H I L CNN "Allied Price/Stock"
+F12 "132136" 400 150 50 H V C CNN "MPN"
+DRAW
+P 5 0 1 6 200 100 600 100 600 -300 200 -300 200 100 N
+X 1 1 0 0 200 R 50 50 0 0 U
+X 2 2 0 -100 200 R 50 50 0 0 U
+X 3 3 0 -200 200 R 50 50 0 0 U
+X 4 4 800 0 200 L 50 50 0 0 U
+X 5 5 800 -100 200 L 50 50 0 0 U
+ENDDRAW
+ENDDEF
+#
 # Team-FIRE_53885-0408
 #
 DEF Team-FIRE_53885-0408 J 0 30 Y Y 1 F N
@@ -714,6 +740,27 @@ X VDDCORE 89 -450 -100 200 R 50 50 2 1 U
 X GND_7 90 -450 -800 200 R 50 50 2 1 U
 X VSW 91 -450 0 200 R 50 50 2 1 U
 X VDDIO_5 92 -450 100 200 R 50 50 2 1 U
+ENDDRAW
+ENDDEF
+#
+# Team-FIRE_U.FL-R-SMT_10_
+#
+DEF Team-FIRE_U.FL-R-SMT_10_ J 0 30 Y Y 1 F N
+F0 "J" 950 300 50 H V L CNN
+F1 "Team-FIRE_U.FL-R-SMT_10_" 950 200 50 H V L CNN
+F2 "UFLRSMT10" 950 100 50 H I L CNN
+F3 "https://media.digikey.com/pdf/Data%20Sheets/Hirose%20PDFs/UFL%20Series.pdf" 950 0 50 H I L CNN
+F4 "RF Connectors / Coaxial Connectors U.FL RECEPTACLE SMT GLD M CONT REEL" 950 -100 50 H I L CNN "Description"
+F5 "1.25" 950 -200 50 H I L CNN "Height"
+F6 "Hirose" 950 -300 50 H I L CNN "Manufacturer_Name"
+F7 "U.FL-R-SMT(10)" 950 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "798-U.FL-R-SMT10" 950 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.com/Search/Refine.aspx?Keyword=798-U.FL-R-SMT10" 950 -600 50 H I L CNN "Mouser Price/Stock"
+DRAW
+P 5 0 1 6 200 100 900 100 900 -200 200 -200 200 100 N
+X GND_1 1 1100 0 200 L 50 50 0 0 U
+X GND_2 2 1100 -100 200 L 50 50 0 0 U
+X SIG 3 0 0 200 R 50 50 0 0 U
 ENDDRAW
 ENDDEF
 #
