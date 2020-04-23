@@ -3,4 +3,6 @@
   (lib (name ATSAMD51N20A-AU-01)(type Legacy)(uri ${KIPRJMOD}/ATSAMD51N20A-AU/KiCad/ATSAMD51N20A-AU-01.lib)(options "")(descr ""))
   (lib (name Boost)(type Legacy)(uri "U:/Senior Design/ul_LM5155DSSR/KiCAD/2020-03-05_03-38-05/2020-03-05_03-38-05.lib")(options "")(descr ""))
   (lib (name Boost_v2)(type Legacy)(uri "U:/Senior Design/ul_TPS55340RTER/KiCAD/2020-03-12_19-23-30/2020-03-12_19-23-30.lib")(options "")(descr ""))
+  (lib (name Boost_chip_v3)(type Legacy)(uri ${KIPRJMOD}/ul_TPS40210DGQR/KiCAD/2020-04-16_22-20-56/2020-04-16_22-20-56.lib)(options "")(descr ""))
+  (lib (name Boost_switch)(type Legacy)(uri ${KIPRJMOD}/ul_CSD18543Q3A/KiCAD/2020-04-23_19-17-17/2020-04-23_19-17-17.lib)(options "")(descr ""))
 )
