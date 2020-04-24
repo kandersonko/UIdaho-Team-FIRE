@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Team-FIRE-v2-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -23,15 +24,7 @@ Text Notes 6850 850  0    79   ~ 16
 Test Points
 Text Notes 1050 1000 0    79   ~ 16
 Iridium 8V PMIC 
-Wire Notes Line
-	1050 5300 4900 5300
-Wire Notes Line
-	4900 5300 4900 7500
-Wire Notes Line
-	4900 7500 1050 7500
-Wire Notes Line
-	1050 7500 1050 5300
-Text Notes 1050 5300 0    79   ~ 16
+Text Notes 850  6500 0    79   ~ 16
 Power/TES Connectors
 Wire Notes Line
 	4900 1000 4900 3200
@@ -217,4 +210,66 @@ F 3 "" H 8900 3300 60  0000 C CNN
 	1    8900 3300
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5EA3E857
+P 1050 7000
+F 0 "J?" H 968 6675 50  0000 C CNN
+F 1 "Conn_01x03" H 968 6766 50  0000 C CNN
+F 2 "Connector_JST:JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal" H 1050 7000 50  0001 C CNN
+F 3 "~" H 1050 7000 50  0001 C CNN
+F 4 "SM03B-SRSS-TB(LF)(SN)" H 1050 7000 50  0001 C CNN "MPN"
+	1    1050 7000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5EA3FD2C
+P 2050 7000
+F 0 "J?" H 1968 6675 50  0000 C CNN
+F 1 "Conn_01x03" H 1968 6766 50  0000 C CNN
+F 2 "Connector_JST:JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal" H 2050 7000 50  0001 C CNN
+F 3 "~" H 2050 7000 50  0001 C CNN
+F 4 "SM03B-SRSS-TB(LF)(SN)" H 2050 7000 50  0001 C CNN "MPN"
+	1    2050 7000
+	-1   0    0    1   
+$EndComp
+Text GLabel 1250 6900 2    39   Input ~ 0
+TES-TX
+Text GLabel 1250 7000 2    39   Input ~ 0
+TES-RX
+$Comp
+L power:GND #PWR?
+U 1 1 5EA4D0AF
+P 1250 7100
+F 0 "#PWR?" H 1250 6850 50  0001 C CNN
+F 1 "GND" V 1255 6972 50  0000 R CNN
+F 2 "" H 1250 7100 50  0001 C CNN
+F 3 "" H 1250 7100 50  0001 C CNN
+	1    1250 7100
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2250 6900 2    39   Input ~ 0
+TES-GPS-FLAG
+Text GLabel 2250 7000 2    39   Input ~ 0
+TES-EN
+$Comp
+L power:GND #PWR?
+U 1 1 5EA5A5FD
+P 2250 7100
+F 0 "#PWR?" H 2250 6850 50  0001 C CNN
+F 1 "GND" V 2255 6972 50  0000 R CNN
+F 2 "" H 2250 7100 50  0001 C CNN
+F 3 "" H 2250 7100 50  0001 C CNN
+	1    2250 7100
+	0    -1   -1   0   
+$EndComp
+Wire Notes Line
+	850  6500 2850 6500
+Wire Notes Line
+	850  7400 2850 7400
+Wire Notes Line
+	850  6500 850  7400
+Wire Notes Line
+	2850 6500 2850 7400
 $EndSCHEMATC
