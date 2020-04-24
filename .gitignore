@@ -25,5 +25,4 @@ fp-info-cache
 
 # Exported BOM files
 *.xml
-*.csv
 Component Test Board/digikey-kicad-library/
