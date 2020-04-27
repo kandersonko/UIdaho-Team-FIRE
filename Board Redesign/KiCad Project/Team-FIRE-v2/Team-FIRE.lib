@@ -1,6 +1,29 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# 43650-0200
+#
+DEF 43650-0200 J 0 30 Y Y 1 F N
+F0 "J" 650 300 50 H V L CNN
+F1 "43650-0200" 650 200 50 H V L CNN
+F2 "43650-0200" 650 100 50 H I L CNN
+F3 "http://www.molex.com/pdm_docs/sd/436500200_sd.pdf" 650 0 50 H I L CNN
+F4 "Header 3.00mm, WTB single row, RA, 2w Molex MICRO-FIT 3.0 Series, Series Number 43650, 3mm Pitch 2 Way 1 Row Shrouded Right Angle PCB Header, Through Hole" 650 -100 50 H I L CNN "Description"
+F5 "Molex" 650 -300 50 H I L CNN "Manufacturer_Name"
+F6 "43650-0200" 650 -400 50 H I L CNN "Manufacturer_Part_Number"
+F7 "538-43650-0200" 650 -500 50 H I L CNN "Mouser Part Number"
+F8 "https://www.mouser.com/Search/Refine.aspx?Keyword=538-43650-0200" 650 -600 50 H I L CNN "Mouser Price/Stock"
+F9 "6704698P" 650 -700 50 H I L CNN "RS Part Number"
+F10 "http://uk.rs-online.com/web/p/products/6704698P" 650 -800 50 H I L CNN "RS Price/Stock"
+F11 "70090939" 650 -900 50 H I L CNN "Allied_Number"
+F12 "https://www.alliedelec.com/molex-incorporated-43650-0200/70090939/" 650 -1000 50 H I L CNN "Allied Price/Stock"
+DRAW
+P 5 0 1 6 200 100 600 100 600 -100 200 -100 200 100 N
+X 1 1 0 0 200 R 50 50 0 0 U
+X 2 2 800 0 200 L 50 50 0 0 U
+ENDDRAW
+ENDDEF
+#
 # 53885-0408
 #
 DEF 53885-0408 J 0 30 Y Y 1 F N
