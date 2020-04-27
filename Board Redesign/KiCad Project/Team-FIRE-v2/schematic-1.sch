@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:Team-FIRE-v2-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 2 5
 Title "Team FIRE Flight-Ready Iridium Carrier"
 Date "2020-02-24"
 Rev "v2.0"
