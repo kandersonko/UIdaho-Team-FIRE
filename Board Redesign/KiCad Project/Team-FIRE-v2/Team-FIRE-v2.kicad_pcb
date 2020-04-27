@@ -19,25 +19,27 @@
 
   (layers
     (0 F.Cu signal)
+    (1 GND.Cu power)
+    (2 PWR.Cu power)
     (31 B.Cu signal)
     (32 B.Adhes user)
     (33 F.Adhes user)
-    (34 B.Paste user hide)
+    (34 B.Paste user)
     (35 F.Paste user)
-    (36 B.SilkS user hide)
+    (36 B.SilkS user)
     (37 F.SilkS user)
     (38 B.Mask user)
     (39 F.Mask user)
-    (40 Dwgs.User user hide)
-    (41 Cmts.User user hide)
-    (42 Eco1.User user hide)
-    (43 Eco2.User user hide)
+    (40 Dwgs.User user)
+    (41 Cmts.User user)
+    (42 Eco1.User user)
+    (43 Eco2.User user)
     (44 Edge.Cuts user)
-    (45 Margin user hide)
-    (46 B.CrtYd user hide)
-    (47 F.CrtYd user hide)
+    (45 Margin user)
+    (46 B.CrtYd user)
+    (47 F.CrtYd user)
     (48 B.Fab user)
-    (49 F.Fab user hide)
+    (49 F.Fab user)
   )
 
   (setup
@@ -144,7 +146,7 @@
   (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 5E236BDA) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
-    (fill (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
         (xy 25.273 25.273) (xy 35.052 25.273) (xy 39.497 29.718) (xy 109.855 29.718) (xy 114.3 25.273)
@@ -157,7 +159,7 @@
   (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 5E236BD7) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
-    (fill (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
         (xy 25.273 114.427) (xy 34.925 114.427) (xy 39.37 109.982) (xy 109.728 109.982) (xy 114.173 114.427)

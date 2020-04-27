@@ -78,8 +78,6 @@ Wire Wire Line
 Wire Wire Line
 	7750 3000 7750 3100
 Connection ~ 7750 3100
-Text GLabel 7450 3000 0    39   Input ~ 0
-IR_5V
 $Comp
 L Device:C C15
 U 1 1 5E4DF7F3
@@ -406,8 +404,6 @@ Wire Wire Line
 	2250 6000 2250 6100
 Wire Wire Line
 	2050 6000 2250 6000
-Text GLabel 1950 6000 0    39   Input ~ 0
-IR_5V
 Connection ~ 2050 6000
 Wire Wire Line
 	2250 6000 3250 6000
@@ -1167,4 +1163,26 @@ Wire Notes Line
 	750  800  6850 800 
 Wire Notes Line
 	6850 800  6850 4800
+$Comp
+L power:+5V #PWR?
+U 1 1 5EA85382
+P 7450 3000
+F 0 "#PWR?" H 7450 2850 50  0001 C CNN
+F 1 "+5V" V 7465 3128 50  0000 L CNN
+F 2 "" H 7450 3000 50  0001 C CNN
+F 3 "" H 7450 3000 50  0001 C CNN
+	1    7450 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5EA858F2
+P 1950 6000
+F 0 "#PWR?" H 1950 5850 50  0001 C CNN
+F 1 "+5V" V 1965 6128 50  0000 L CNN
+F 2 "" H 1950 6000 50  0001 C CNN
+F 3 "" H 1950 6000 50  0001 C CNN
+	1    1950 6000
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

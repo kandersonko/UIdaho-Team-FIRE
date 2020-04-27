@@ -1,4 +1,4 @@
-16287411138653194
+16290587048849194
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -67844,12 +67844,26 @@ Connector
 40
 40
 Team-FIRE
+BTS500601TEAAUMA2
+BTS500601TEAAUMA2-1
+Integrated Circuit
+0
+5
+5
+Team-FIRE
 LT3959EUHEPBF
 UHE Package Variation: UHE36(28)MA
 Integrated Circuit
 0
 30
 30
+Team-FIRE
+MCP1826T-3302E&slash_DC
+
+
+0
+5
+5
 Team-FIRE
 PCBMMCXFSTSMTJACKHT
 PCB.MMCX.F.ST.SMT.JACK.HT-2
