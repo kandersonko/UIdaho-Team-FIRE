@@ -1,4 +1,4 @@
-16287410993078194
+16287411138653194
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -67837,13 +67837,6 @@ Logo WEEE
 0
 0
 Team-FIRE
-132136RP
-132136RP-2
-Connector
-0
-5
-5
-Team-FIRE
 538850408
 53885-0408-1
 Connector
@@ -67857,6 +67850,13 @@ Integrated Circuit
 0
 30
 30
+Team-FIRE
+PCBMMCXFSTSMTJACKHT
+PCB.MMCX.F.ST.SMT.JACK.HT-2
+Connector
+0
+5
+5
 Team-FIRE
 QFN40P400X400X60-29N-D
 QFN-UT

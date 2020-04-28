@@ -16,96 +16,96 @@ $EndDescr
 $Comp
 L Team-FIRE:SAMD51 U?
 U 1 1 5ED61BFB
-P 1830 2280
+P 2060 2240
 AR Path="/5E4F8378/5ED61BFB" Ref="U?"  Part="1" 
 AR Path="/5E4F8378/5ED4DEFC/5ED61BFB" Ref="U?"  Part="1" 
-F 0 "U?" H 2908 2412 98  0000 L CNN
-F 1 "SAMD51" H 2908 2249 98  0000 L CNN
-F 2 "Package_QFP:TQFP-100_14x14mm_P0.5mm" H 980 130 28  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/60001507E.pdf" V 1640 2010 28  0001 C CNN
-F 4 "1.2" H 1030 230 28  0001 C CNN "Height"
-F 5 "ATSAMD51N20A-AU" H 730 230 28  0001 C CNN "MPN"
-	1    1830 2280
+F 0 "U?" H 3138 2372 98  0000 L CNN
+F 1 "SAMD51" H 3138 2209 98  0000 L CNN
+F 2 "Package_QFP:TQFP-100_14x14mm_P0.5mm" H 1210 90  28  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/60001507E.pdf" V 1870 1970 28  0001 C CNN
+F 4 "1.2" H 1260 190 28  0001 C CNN "Height"
+F 5 "ATSAMD51N20A-AU" H 960 190 28  0001 C CNN "MPN"
+	1    2060 2240
 	1    0    0    -1  
 $EndComp
-Text GLabel 1030 830  0    50   Input ~ 0
+Text GLabel 1260 790  0    50   Input ~ 0
 XIN32
-Text GLabel 1030 930  0    50   Input ~ 0
+Text GLabel 1260 890  0    50   Input ~ 0
 XOUT32
-Text GLabel 1030 3230 0    50   Input ~ 0
+Text GLabel 1260 3190 0    50   Input ~ 0
 USB_D-
-Text GLabel 1030 3330 0    50   Input ~ 0
+Text GLabel 1260 3290 0    50   Input ~ 0
 USB_D+
-Text GLabel 1030 3130 0    50   Input ~ 0
+Text GLabel 1260 2790 0    50   Input ~ 0
 SDA
-Text GLabel 1030 3030 0    50   Input ~ 0
-SDL
+Text GLabel 1260 2890 0    50   Input ~ 0
+SCL
 $Comp
 L Team-FIRE:SAMD51 U?
 U 2 1 5ED61C09
-P 4550 2270
+P 4780 2230
 AR Path="/5E4F8378/5ED61C09" Ref="U?"  Part="2" 
 AR Path="/5E4F8378/5ED4DEFC/5ED61C09" Ref="U?"  Part="2" 
-F 0 "U?" H 5088 2402 98  0000 L CNN
-F 1 "SAMD51" H 5088 2239 98  0000 L CNN
-F 2 "Package_QFP:TQFP-100_14x14mm_P0.5mm" H 3700 120 28  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/60001507E.pdf" V 4360 2000 28  0001 C CNN
-F 4 "1.2" H 3750 220 28  0001 C CNN "Height"
-F 5 "ATSAMD51N20A-AU" H 3450 220 28  0001 C CNN "MPN"
-	2    4550 2270
+F 0 "U?" H 5318 2362 98  0000 L CNN
+F 1 "SAMD51" H 5318 2199 98  0000 L CNN
+F 2 "Package_QFP:TQFP-100_14x14mm_P0.5mm" H 3930 80  28  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/60001507E.pdf" V 4590 1960 28  0001 C CNN
+F 4 "1.2" H 3980 180 28  0001 C CNN "Height"
+F 5 "ATSAMD51N20A-AU" H 3680 180 28  0001 C CNN "MPN"
+	2    4780 2230
 	1    0    0    -1  
 $EndComp
 $Comp
 L Team-FIRE:SAMD51 U?
 U 3 1 5ED61C11
-P 6760 2280
+P 7550 2210
 AR Path="/5E4F8378/5ED61C11" Ref="U?"  Part="3" 
 AR Path="/5E4F8378/5ED4DEFC/5ED61C11" Ref="U?"  Part="3" 
-F 0 "U?" H 7178 2637 98  0000 L CNN
-F 1 "SAMD51" H 7178 2474 98  0000 L CNN
-F 2 "Package_QFP:TQFP-100_14x14mm_P0.5mm" H 5910 130 28  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/60001507E.pdf" V 6570 2010 28  0001 C CNN
-F 4 "1.2" H 5960 230 28  0001 C CNN "Height"
-F 5 "ATSAMD51N20A-AU" H 5660 230 28  0001 C CNN "MPN"
-	3    6760 2280
+F 0 "U?" H 7968 2567 98  0000 L CNN
+F 1 "SAMD51" H 7968 2404 98  0000 L CNN
+F 2 "Package_QFP:TQFP-100_14x14mm_P0.5mm" H 6700 60  28  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/60001507E.pdf" V 7360 1940 28  0001 C CNN
+F 4 "1.2" H 6750 160 28  0001 C CNN "Height"
+F 5 "ATSAMD51N20A-AU" H 6450 160 28  0001 C CNN "MPN"
+	3    7550 2210
 	1    0    0    -1  
 $EndComp
-Text GLabel 3750 3470 0    50   Input ~ 0
+Text GLabel 1260 3490 0    50   Input ~ 0
 SWCLK
-Text GLabel 3750 3570 0    50   Input ~ 0
+Text GLabel 1260 3590 0    50   Input ~ 0
 SWDIO
-Text GLabel 3750 1170 0    50   Input ~ 0
+Text GLabel 3980 1130 0    50   Input ~ 0
 RX_LED
-Text GLabel 1030 3430 0    50   Input ~ 0
+Text GLabel 1260 3390 0    50   Input ~ 0
 TX_LED
-Text GLabel 5960 3080 0    50   Input ~ 0
+Text GLabel 6740 3010 0    50   Input ~ 0
 SWO
-Text GLabel 3750 3070 0    50   Input ~ 0
-TX
-Text GLabel 3750 3170 0    50   Input ~ 0
-RX
-Text GLabel 3750 1970 0    50   Input ~ 0
+Text GLabel 3980 3030 0    50   Input ~ 0
+SYS-TX
+Text GLabel 3980 3130 0    50   Input ~ 0
+SYS-RX
+Text GLabel 3980 1930 0    50   Input ~ 0
 MISO
-Text GLabel 3750 2070 0    50   Input ~ 0
+Text GLabel 3980 2030 0    50   Input ~ 0
 MOSI
-Text GLabel 3750 2170 0    50   Input ~ 0
+Text GLabel 3980 2130 0    50   Input ~ 0
 SCK
 $Comp
 L Team-FIRE:SAMD51 U?
 U 4 1 5ED73FEA
-P 8680 2280
+P 9500 2240
 AR Path="/5E4F8378/5ED73FEA" Ref="U?"  Part="4" 
 AR Path="/5E4F8378/5ED4DEFC/5ED73FEA" Ref="U?"  Part="4" 
-F 0 "U?" H 9078 2842 98  0000 L CNN
-F 1 "SAMD51" H 9078 2679 98  0000 L CNN
-F 2 "Package_QFP:TQFP-100_14x14mm_P0.5mm" H 7830 130 28  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/60001507E.pdf" V 8490 2010 28  0001 C CNN
-F 4 "1.2" H 7880 230 28  0001 C CNN "Height"
-F 5 "ATSAMD51N20A-AU" H 7580 230 28  0001 C CNN "MPN"
-	4    8680 2280
+F 0 "U?" H 9898 2802 98  0000 L CNN
+F 1 "SAMD51" H 9898 2639 98  0000 L CNN
+F 2 "Package_QFP:TQFP-100_14x14mm_P0.5mm" H 8650 90  28  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/60001507E.pdf" V 9310 1970 28  0001 C CNN
+F 4 "1.2" H 8700 190 28  0001 C CNN "Height"
+F 5 "ATSAMD51N20A-AU" H 8400 190 28  0001 C CNN "MPN"
+	4    9500 2240
 	1    0    0    -1  
 $EndComp
-Text GLabel 8200 900  0    50   Input ~ 0
+Text GLabel 9020 860  0    50   Input ~ 0
 RST
 $Comp
 L Device:C C?
@@ -283,57 +283,57 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 5ED9C4E1
-P 8200 2770
+P 9020 2730
 AR Path="/5E4F8378/5ED9C4E1" Ref="#PWR?"  Part="1" 
 AR Path="/5E4F8378/5EA71818/5ED9C4E1" Ref="#PWR?"  Part="1" 
 AR Path="/5E4F8378/5ED4DEFC/5ED7D75E/5ED9C4E1" Ref="#PWR?"  Part="1" 
 AR Path="/5E4F8378/5ED4DEFC/5ED9C4E1" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8200 2520 50  0001 C CNN
-F 1 "GND" H 8205 2597 50  0000 C CNN
-F 2 "" H 8200 2770 50  0001 C CNN
-F 3 "" H 8200 2770 50  0001 C CNN
-	1    8200 2770
+F 0 "#PWR?" H 9020 2480 50  0001 C CNN
+F 1 "GND" H 9025 2557 50  0000 C CNN
+F 2 "" H 9020 2730 50  0001 C CNN
+F 3 "" H 9020 2730 50  0001 C CNN
+	1    9020 2730
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8200 1200 8200 1300
-Connection ~ 8200 1300
+	9020 1160 9020 1260
+Connection ~ 9020 1260
 Wire Wire Line
-	8200 1300 8200 1400
-Connection ~ 8200 1400
+	9020 1260 9020 1360
+Connection ~ 9020 1360
 Wire Wire Line
-	8200 1400 8200 1500
-Connection ~ 8200 1500
+	9020 1360 9020 1460
+Connection ~ 9020 1460
 Wire Wire Line
-	8200 1500 8200 1600
-Connection ~ 8200 1600
+	9020 1460 9020 1560
+Connection ~ 9020 1560
 Wire Wire Line
-	8200 1600 8200 1700
+	9020 1560 9020 1660
 Wire Wire Line
-	8200 2000 8200 2100
-Connection ~ 8200 2100
+	9020 1960 9020 2060
+Connection ~ 9020 2060
 Wire Wire Line
-	8200 2100 8200 2200
-Connection ~ 8200 2200
+	9020 2060 9020 2160
+Connection ~ 9020 2160
 Wire Wire Line
-	8200 2200 8200 2300
-Connection ~ 8200 2300
+	9020 2160 9020 2260
+Connection ~ 9020 2260
 Wire Wire Line
-	8200 2300 8200 2400
-Connection ~ 8200 2400
+	9020 2260 9020 2360
+Connection ~ 9020 2360
 Wire Wire Line
-	8200 2400 8200 2500
-Connection ~ 8200 2500
+	9020 2360 9020 2460
+Connection ~ 9020 2460
 Wire Wire Line
-	8200 2500 8200 2600
-Connection ~ 8200 2600
+	9020 2460 9020 2560
+Connection ~ 9020 2560
 Wire Wire Line
-	8200 2600 8200 2700
+	9020 2560 9020 2660
 Text GLabel 8720 4510 2    50   Input ~ 10
 VDDCORE
 Wire Wire Line
-	8200 2700 8200 2770
-Connection ~ 8200 2700
+	9020 2660 9020 2730
+Connection ~ 9020 2660
 Wire Wire Line
 	8620 4340 8720 4340
 Wire Wire Line
@@ -372,9 +372,9 @@ Wire Wire Line
 Connection ~ 6790 4530
 Wire Wire Line
 	6790 4530 7070 4530
-Text GLabel 8200 1900 0    50   Input ~ 10
+Text GLabel 9020 1860 0    50   Input ~ 10
 VDDCORE
-Text GLabel 8200 1800 0    50   Input ~ 10
+Text GLabel 9020 1760 0    50   Input ~ 10
 VSW
 $Comp
 L power:+3.3V #PWR?
@@ -391,24 +391,24 @@ Wire Wire Line
 	6500 4530 6500 4480
 Connection ~ 6500 4530
 Wire Wire Line
-	8200 1000 8200 1100
-Connection ~ 8200 1200
-Connection ~ 8200 1100
+	9020 960  9020 1060
+Connection ~ 9020 1160
+Connection ~ 9020 1060
 Wire Wire Line
-	8200 1100 8200 1200
+	9020 1060 9020 1160
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5F0BA0B2
-P 8050 1200
-F 0 "#PWR?" H 8050 1050 50  0001 C CNN
-F 1 "+3.3V" H 8065 1373 50  0000 C CNN
-F 2 "" H 8050 1200 50  0001 C CNN
-F 3 "" H 8050 1200 50  0001 C CNN
-	1    8050 1200
+P 8870 1160
+F 0 "#PWR?" H 8870 1010 50  0001 C CNN
+F 1 "+3.3V" H 8885 1333 50  0000 C CNN
+F 2 "" H 8870 1160 50  0001 C CNN
+F 3 "" H 8870 1160 50  0001 C CNN
+	1    8870 1160
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8200 1200 8050 1200
+	9020 1160 8870 1160
 Wire Notes Line
 	6180 4090 9210 4090
 Wire Notes Line
@@ -803,15 +803,7 @@ Wire Notes Line
 	3750 5730 990  5730
 Wire Notes Line
 	990  5730 990  4060
-Wire Notes Line
-	630  700  9660 700 
-Wire Notes Line
-	9660 700  9660 3800
-Wire Notes Line
-	9660 3800 630  3800
-Wire Notes Line
-	630  3800 630  700 
-Text Notes 620  680  0    50   ~ 10
+Text Notes 850  640  0    50   ~ 10
 SAMD51
 Connection ~ 8620 4640
 Wire Wire Line
@@ -846,4 +838,60 @@ Connection ~ 8310 4510
 Wire Wire Line
 	8310 4510 8310 4640
 Connection ~ 8620 4510
+Text GLabel 1260 1590 0    50   Input ~ 0
+FLASH_MOSI
+Text GLabel 1260 1790 0    50   Input ~ 0
+FLASH_CS
+Text GLabel 1260 1890 0    50   Input ~ 0
+FLASH_MISO
+Text GLabel 1260 1690 0    50   Input ~ 0
+FLASH_SCK
+Text GLabel 1260 2290 0    50   Input ~ 0
+IO-RTS
+Text GLabel 1260 1990 0    50   Input ~ 0
+IO-CTS
+Text GLabel 1260 2190 0    50   Input ~ 0
+IO-DSR
+Text GLabel 1260 2390 0    50   Input ~ 0
+IO-DCD
+Text GLabel 3510 3350 0    50   Input ~ 0
+IO-RI
+Text GLabel 1260 2590 0    50   Input ~ 0
+IO-TX
+Text GLabel 1260 2690 0    50   Input ~ 0
+IO-RX
+Text GLabel 3980 1830 0    50   Input ~ 0
+IO-DTR
+Text GLabel 3980 1630 0    50   Input ~ 0
+5V_ISENSE
+Text GLabel 3980 1730 0    50   Input ~ 0
+8V_ISENSE
+Text GLabel 6740 1510 0    50   Input ~ 0
+5V_EN
+Text GLabel 6740 1610 0    50   Input ~ 0
+8V_EN
+Text GLabel 6740 1710 0    50   Input ~ 0
+3959_GOOD
+Text GLabel 6740 1810 0    50   Input ~ 0
+3959_EN
+Text GLabel 6740 1910 0    50   Input ~ 0
+EN_IR_BUS
+Text GLabel 6740 2010 0    50   Input ~ 0
+TX_ACTIVE
+Text GLabel 6740 2110 0    50   Input ~ 0
+EN_TES_BUS
+Text GLabel 6740 2210 0    50   Input ~ 0
+BOOST_EN
+Text GLabel 6740 2310 0    50   Input ~ 0
+PWR_EN
+Text GLabel 6740 2410 0    50   Input ~ 0
+PWR_SW
+Wire Notes Line
+	10950 650  10950 3830
+Wire Notes Line
+	10950 3830 580  3830
+Wire Notes Line
+	580  3830 580  650 
+Wire Notes Line
+	580  650  10950 650 
 $EndSCHEMATC
